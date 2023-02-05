@@ -14,16 +14,19 @@ import Layout from '~/components/Layout'
 import Section from '~/components/Section'
 import Media from '~/components/Media'
 import Tags, { Tag } from '~/components/Tags'
+import Singles, { Single } from '~/components/Singles'
 import Description from '~/components/Description'
 
 function App() {
   return (
     <Layout>
-      <h1 className="text-6xl font-light uppercase tracking-wide">Brightly</h1>
+      <h1 className="text-4xl sm:text-6xl font-light uppercase tracking-wide">
+        Brightly
+      </h1>
 
       <header>
-        <p>
-          <strong className="border-b-2 border-yellow-700/50">
+        <p className="text-slate-500 dark:text-yellow-500">
+          <strong className="text-slate-600 dark:text-yellow-400 border-b-2 border-slate-400/50 dark:border-yellow-700/50">
             Brightly is Charlie Gleason, a musician, programmer and computer
             science dropout.
           </strong>{' '}
@@ -35,7 +38,7 @@ function App() {
 
       <Section>
         <Heading>Listen</Heading>
-        <Grid cols="3">
+        <Grid cols="services">
           <StreamingService
             href="https://music.apple.com/us/artist/brightly/294844291"
             Icon={SiApplemusic}
@@ -70,8 +73,8 @@ function App() {
       </Section>
 
       <Section>
-        <Heading>Discography</Heading>
-        <Grid cols="2">
+        <Heading>Albums & EP's</Heading>
+        <Grid cols="media">
           <Media
             id="beginnings-and-endings"
             format="jpg"
@@ -122,8 +125,53 @@ function App() {
       </Section>
 
       <Section>
+        <Heading>Singles</Heading>
+
+        <Singles>
+          <Single
+            id="rugby"
+            name="Rugby"
+            year="2016"
+            album="One For Sorrow, Two For Joy"
+          />
+          <Single
+            id="keep-me-close"
+            name="Keep Me Close"
+            year="2015"
+            album="Oh, Infinity"
+          />
+          <Single id="true" name="True" year="2015" album="Oh, Infinity" />
+          <Single
+            id="doubt-acoustic"
+            name="Doubt (Acoustic)"
+            year="2013"
+            album="The Greylings"
+          />
+          <Single
+            id="world-war"
+            name="World War"
+            year="2013"
+            album="The Greylings"
+          />
+          <Single
+            id="preflight-nerves"
+            name="Preflight Nerves"
+            year="2013"
+            album="Beginnings & Endings"
+          />
+          <Single id="sarah" name="Sarah" year="2013" album='Sarah 7"' />
+          <Single
+            id="tokyo"
+            name="Tokyo"
+            year="2013"
+            album="We Were In Tokyo & Then We Woke Up"
+          />
+        </Singles>
+      </Section>
+
+      <Section>
         <Heading>Projects</Heading>
-        <Grid cols="2">
+        <Grid cols="media">
           <Media
             id="project-iwnlyg"
             format="svg"
