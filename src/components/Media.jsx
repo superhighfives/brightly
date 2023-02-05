@@ -20,7 +20,7 @@ export default function Media({
       <img
         alt=""
         className={`w-12 h-12 block ${rounded ? variantsRounded[rounded] : ''}`}
-        src={`/${id}.${format}`}
+        src={`/images/${id}.${format}`}
       />
       <div className="grid gap-1 flex-col min-w-0">
         <Title>{name}</Title>
