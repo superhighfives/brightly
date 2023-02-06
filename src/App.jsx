@@ -14,7 +14,7 @@ import Layout from '~/components/Layout'
 import Section from '~/components/Section'
 import Media from '~/components/Media'
 import Tags, { Tag } from '~/components/Tags'
-import Singles, { Single } from '~/components/Singles'
+import Table, { Row } from '~/components/Table'
 import Description from '~/components/Description'
 
 function App() {
@@ -42,32 +42,32 @@ function App() {
           <StreamingService
             href="https://music.apple.com/us/artist/brightly/294844291"
             Icon={SiApplemusic}
-            name="Apple Music"
+            title="Apple Music"
           />
           <StreamingService
             href="https://open.spotify.com/artist/2bzVTFy1nQlxHeuea2B0f2"
             Icon={SiSpotify}
-            name="Spotify"
+            title="Spotify"
           />
           <StreamingService
             href="https://youtube.com/wearebrightly"
             Icon={SiYoutube}
-            name="YouTube"
+            title="YouTube"
           />
           <StreamingService
             href="https://music.wearebrightly.com/"
             Icon={SiBandcamp}
-            name="Bandcamp"
+            title="Bandcamp"
           />
           <StreamingService
             href="https://amazon.co.uk/music/player/artists/B001JIAM3M/brightly"
             Icon={SiAmazon}
-            name="Amazon Music"
+            title="Amazon Music"
           />
           <StreamingService
             href="https://soundcloud.com/wearebrightly"
             Icon={SiSoundcloud}
-            name="Soundcloud"
+            title="Soundcloud"
           />
         </Grid>
       </Section>
@@ -78,7 +78,7 @@ function App() {
           <Media
             id="beginnings-and-endings"
             format="jpg"
-            name="Beginnings & Endings"
+            title="Beginnings & Endings"
             href="https://wearebrightly.bandcamp.com/album/beginnings-endings"
             rounded="md"
           >
@@ -90,7 +90,7 @@ function App() {
           <Media
             id="the-greylings"
             format="jpg"
-            name="The Greylings"
+            title="The Greylings"
             href="https://wearebrightly.bandcamp.com/album/the-greylings"
             rounded="md"
           >
@@ -102,7 +102,7 @@ function App() {
           <Media
             id="oh-infinity"
             format="jpg"
-            name="Oh, Infinity"
+            title="Oh, Infinity"
             href="https://wearebrightly.bandcamp.com/album/oh-infinity"
             rounded="md"
           >
@@ -114,7 +114,7 @@ function App() {
           <Media
             id="sorrow-and-joy"
             format="jpg"
-            name="One For Sorrow, Two For Joy"
+            title="One For Sorrow, Two For Joy"
             href="https://wearebrightly.bandcamp.com/album/one-for-sorrow-two-for-joy"
             rounded="md"
           >
@@ -129,46 +129,40 @@ function App() {
       <Section>
         <Heading>Singles</Heading>
 
-        <Singles>
-          <Single
+        <Table>
+          <Row
             id="rugby"
-            name="Rugby"
-            year="2016"
-            album="One For Sorrow, Two For Joy"
+            title="Rugby"
+            data={['2016', 'One For Sorrow, Two For Joy']}
           />
-          <Single
+          <Row
             id="keep-me-close"
-            name="Keep Me Close"
-            year="2015"
-            album="Oh, Infinity"
+            title="Keep Me Close"
+            data={['2015', 'Oh, Infinity']}
           />
-          <Single id="true" name="True" year="2015" album="Oh, Infinity" />
-          <Single
+          <Row id="true" title="True" data={['2015', 'Oh, Infinity']} />
+          <Row
             id="doubt-acoustic"
-            name="Doubt (Acoustic)"
-            year="2013"
-            album="The Greylings"
+            title="Doubt (Acoustic)"
+            data={['2013', 'The Greylings']}
           />
-          <Single
+          <Row
             id="world-war"
-            name="World War"
-            year="2013"
-            album="The Greylings"
+            title="World War"
+            data={['2013', 'The Greylings']}
           />
-          <Single
+          <Row
             id="preflight-nerves"
-            name="Preflight Nerves"
-            year="2013"
-            album="Beginnings & Endings"
+            title="Preflight Nerves"
+            data={['2013', 'Beginnings & Endings']}
           />
-          <Single id="sarah" name="Sarah" year="2013" album='Sarah 7"' />
-          <Single
+          <Row id="sarah" title="Sarah" data={['2013', 'Sarah 7"']} />
+          <Row
             id="tokyo"
-            name="Tokyo"
-            year="2013"
-            album="We Were In Tokyo & Then We Woke Up"
+            title="Tokyo"
+            data={['2013', 'We Were In Tokyo & Then We Woke Up']}
           />
-        </Singles>
+        </Table>
       </Section>
 
       <Section>
@@ -177,7 +171,7 @@ function App() {
           <Media
             id="project-iwnlyg"
             format="svg"
-            name="I Will Never Let You Go"
+            title="I Will Never Let You Go"
             href="https://iwillneverletyougo.com/"
           >
             <Description>A WebGL mashup between viewers</Description>
@@ -185,7 +179,7 @@ function App() {
           <Media
             id="project-rugby"
             format="svg"
-            name="Rugby"
+            title="Rugby"
             href="https://rugby.wearebrightly.com/"
           >
             <Description>A love letter to the humble GIF</Description>
@@ -193,7 +187,7 @@ function App() {
           <Media
             id="project-true"
             format="svg"
-            name="True"
+            title="True"
             href="https://true.wearebrightly.com/"
           >
             <Description>The WebAudio API meets karaoke</Description>
@@ -201,7 +195,7 @@ function App() {
           <Media
             id="project-tweetflight"
             format="svg"
-            name="Tweetflight"
+            title="Tweetflight"
             href="https://tweetflight.wearebrightly.com/"
           >
             <Description>The Twitter music video</Description>
@@ -209,7 +203,7 @@ function App() {
           <Media
             id="project-beginnings"
             format="svg"
-            name="Beginnings & Endings"
+            title="Beginnings & Endings"
             href="https://beginnings.wearebrightly.com/"
           >
             <Description>Music meets pyramid scheme</Description>

@@ -3,7 +3,7 @@ import Title from '~/components/Title'
 export default function Media({
   id,
   format,
-  name,
+  title,
   children,
   rounded = false,
   href,
@@ -23,7 +23,7 @@ export default function Media({
         src={`/images/${id}.${format}`}
       />
       <div className="grid gap-1 flex-col min-w-0">
-        <Title>{name}</Title>
+        <Title>{title}</Title>
         {children}
       </div>
     </a>
