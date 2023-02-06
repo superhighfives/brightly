@@ -5,10 +5,11 @@ import {
   SiYoutube,
   SiAmazon,
   SiSoundcloud,
+  SiInstagram,
 } from 'react-icons/si'
 
 import Heading from '~/components/Heading'
-import StreamingService from '~/components/StreamingService'
+import Service from '~/components/Service'
 import Grid from '~/components/Grid'
 import Layout from '~/components/Layout'
 import Section from '~/components/Section'
@@ -39,32 +40,32 @@ function App() {
       <Section>
         <Heading>Listen</Heading>
         <Grid cols="services">
-          <StreamingService
+          <Service
             href="https://music.apple.com/us/artist/brightly/294844291"
             Icon={SiApplemusic}
             title="Apple Music"
           />
-          <StreamingService
+          <Service
             href="https://open.spotify.com/artist/2bzVTFy1nQlxHeuea2B0f2"
             Icon={SiSpotify}
             title="Spotify"
           />
-          <StreamingService
+          <Service
             href="https://youtube.com/wearebrightly"
             Icon={SiYoutube}
             title="YouTube"
           />
-          <StreamingService
+          <Service
             href="https://music.wearebrightly.com/"
             Icon={SiBandcamp}
             title="Bandcamp"
           />
-          <StreamingService
+          <Service
             href="https://amazon.co.uk/music/player/artists/B001JIAM3M/brightly"
             Icon={SiAmazon}
             title="Amazon Music"
           />
-          <StreamingService
+          <Service
             href="https://soundcloud.com/wearebrightly"
             Icon={SiSoundcloud}
             title="Soundcloud"
@@ -208,6 +209,18 @@ function App() {
           >
             <Description>Music meets pyramid scheme</Description>
           </Media>
+        </Grid>
+      </Section>
+
+      <Section>
+        <Heading>Social</Heading>
+        <Grid cols="services">
+          <Service
+            href="https://instagram.com/wearebrightly"
+            Icon={SiInstagram}
+            title="Instagram"
+            size="sm"
+          />
         </Grid>
       </Section>
     </Layout>
