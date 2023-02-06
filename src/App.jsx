@@ -26,7 +26,7 @@ function App() {
 
       <header>
         <p className="text-slate-500 dark:text-yellow-500">
-          <strong className="text-slate-600 dark:text-yellow-400 border-b-2 border-slate-400/50 dark:border-yellow-700/50">
+          <strong className="text-slate-600 dark:text-yellow-400 border-b border-slate-400/50 dark:border-yellow-700/50">
             Brightly is Charlie Gleason, a musician, programmer and computer
             science dropout.
           </strong>{' '}
@@ -78,10 +78,9 @@ function App() {
           <Media
             id="beginnings-and-endings"
             format="jpg"
-            year="2013"
             name="Beginnings & Endings"
-            type="Album"
             href="https://wearebrightly.bandcamp.com/album/beginnings-endings"
+            rounded="md"
           >
             <Tags>
               <Tag>2013</Tag>
@@ -93,6 +92,7 @@ function App() {
             format="jpg"
             name="The Greylings"
             href="https://wearebrightly.bandcamp.com/album/the-greylings"
+            rounded="md"
           >
             <Tags>
               <Tag>2014</Tag>
@@ -104,6 +104,7 @@ function App() {
             format="jpg"
             name="Oh, Infinity"
             href="https://wearebrightly.bandcamp.com/album/oh-infinity"
+            rounded="md"
           >
             <Tags>
               <Tag>2015</Tag>
@@ -115,6 +116,7 @@ function App() {
             format="jpg"
             name="One For Sorrow, Two For Joy"
             href="https://wearebrightly.bandcamp.com/album/one-for-sorrow-two-for-joy"
+            rounded="md"
           >
             <Tags>
               <Tag>2016</Tag>
