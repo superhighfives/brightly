@@ -137,6 +137,11 @@ function App() {
             data={['2016', 'One For Sorrow, Two For Joy']}
           />
           <Row
+            id="iwnlyg"
+            title="I Will Never Let You Go"
+            data={['2016', 'One For Sorrow, Two For Joy']}
+          />
+          <Row
             id="keep-me-close"
             title="Keep Me Close"
             data={['2015', 'Oh, Infinity']}
@@ -145,6 +150,11 @@ function App() {
           <Row
             id="doubt-acoustic"
             title="Doubt (Acoustic)"
+            data={['2013', 'The Greylings']}
+          />
+          <Row
+            id="this-sinking-ship"
+            title="This Sinking Ship"
             data={['2013', 'The Greylings']}
           />
           <Row
@@ -158,6 +168,11 @@ function App() {
             data={['2013', 'Beginnings & Endings']}
           />
           <Row id="sarah" title="Sarah" data={['2013', 'Sarah 7"']} />
+          <Row
+            id="and-then-we-woke-up"
+            title="& Then We Woke Up"
+            data={['2013', 'We Were In Tokyo & Then We Woke Up']}
+          />
           <Row
             id="tokyo"
             title="Tokyo"
