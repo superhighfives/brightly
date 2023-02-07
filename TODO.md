@@ -14,5 +14,10 @@
   - [-] [Sarah](https://www.youtube.com/watch?v=URZ-GaAJ-V8)
   - [-] [& Then We Woke Up](https://www.youtube.com/watch?v=IH1PEb9X6kY)
   - [-] [Tokyo](https://www.youtube.com/watch?v=gA77r0aGtpM)
-- **Add news stories**
-  - [ ] 
+- **News Stories**
+  - [ ] [Zealous](https://zealous.co/about/archive-2/features-archive/charlie-gleason-electronic-folk-music/)
+  - [ ] [Tone Deaf](https://tonedeaf.thebrag.com/premiere-brightly-unveils-stunning-new-lp-one-for-sorrow-two-for-joy/)
+- **Reviews**
+  - [ ] [AAA Backstage](https://aaabackstage.com/album-review-brightly-one-for-sorrow-two-for-joy/)
+- **Other**
+  - [ ] [Kickstarter](https://www.kickstarter.com/projects/207221174/one-for-sorrow-two-for-joy-an-experiment-in-partic/description)

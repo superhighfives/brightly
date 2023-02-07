@@ -25,11 +25,11 @@ import Description from '~/components/Description'
 function App() {
   return (
     <Layout>
-      <h1 className="text-4xl sm:text-6xl font-light uppercase tracking-wide">
+      <h1 className="text-4xl sm:text-6xl font-light uppercase tracking-wide pl-2">
         Brightly
       </h1>
 
-      <header>
+      <header className="pl-2">
         <p className="text-slate-500 dark:text-yellow-500">
           <strong className="text-slate-600 dark:text-yellow-400 border-b border-slate-400/50 dark:border-yellow-700/50">
             Brightly is Charlie Gleason, a musician, programmer and computer

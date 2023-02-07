@@ -13,12 +13,12 @@ export function Row({ id, title, data, href }) {
     <a
       key={id}
       href={href}
-      className="py-2 group grid items-center xs:grid-cols-2 gap-2 outline-yellow-500"
+      className="py-2 group grid items-center xs:grid-cols-2 gap-4 outline-yellow-500"
     >
-      <dt className="truncate font-bold text-xs justify-self-start max-w-full -ml-2">
+      <dt className="truncate font-bold text-xs justify-self-start max-w-full">
         <Title size="xs">{title}</Title>
       </dt>
-      <dd className="flex font-mono font-semibold text-slate-500 dark:text-yellow-500 text-2xs truncate gap-8">
+      <dd className="flex font-mono font-semibold text-slate-500 dark:text-yellow-500 text-2xs truncate gap-8 pl-1">
         {data.map((item, i) => (
           <span
             key={i}
