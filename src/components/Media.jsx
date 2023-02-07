@@ -5,12 +5,13 @@ export default function Media({
   format,
   title,
   children,
-  rounded = false,
+  type = false,
   href,
 }) {
   const variantsRounded = {
-    full: 'rounded-full',
-    md: 'rounded-md',
+    icon: 'rounded-full',
+    record:
+      'rounded-md grayscale group-hover:grayscale-0 group-hover:border-slate-300 dark:group-hover:border-yellow-400',
   }
   return (
     <a
@@ -19,7 +20,9 @@ export default function Media({
     >
       <img
         alt=""
-        className={`w-12 h-12 block ${rounded ? variantsRounded[rounded] : ''}`}
+        className={`w-12 h-12 block border-b-2 border-transparent transition-all ${
+          type ? variantsRounded[type] : ''
+        }`}
         src={`/images/${id}.${format}`}
       />
       <div className="grid gap-1 flex-col min-w-0">

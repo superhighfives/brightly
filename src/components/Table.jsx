@@ -13,7 +13,7 @@ export function Row({ id, title, data, href }) {
     <a
       key={id}
       href={href}
-      className="py-2 group grid items-center xs:grid-cols-2 gap-2"
+      className="py-2 group grid items-center xs:grid-cols-2 gap-2 outline-yellow-500"
     >
       <dt className="truncate font-bold text-xs justify-self-start max-w-full -ml-2">
         <Title size="xs">{title}</Title>

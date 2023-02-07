@@ -95,7 +95,7 @@ function App() {
             format="jpg"
             title="Beginnings & Endings"
             href="https://wearebrightly.bandcamp.com/album/beginnings-endings"
-            rounded="md"
+            type="record"
           >
             <Tags>
               <Tag>2013</Tag>
@@ -107,7 +107,7 @@ function App() {
             format="jpg"
             title="The Greylings"
             href="https://wearebrightly.bandcamp.com/album/the-greylings"
-            rounded="md"
+            type="record"
           >
             <Tags>
               <Tag>2014</Tag>
@@ -119,7 +119,7 @@ function App() {
             format="jpg"
             title="Oh, Infinity"
             href="https://wearebrightly.bandcamp.com/album/oh-infinity"
-            rounded="md"
+            type="record"
           >
             <Tags>
               <Tag>2015</Tag>
@@ -131,7 +131,7 @@ function App() {
             format="jpg"
             title="One For Sorrow, Two For Joy"
             href="https://wearebrightly.bandcamp.com/album/one-for-sorrow-two-for-joy"
-            rounded="md"
+            type="record"
           >
             <Tags>
               <Tag>2016</Tag>
