@@ -91,7 +91,7 @@ function App() {
         <Heading>Albums & EP's</Heading>
         <Grid cols="media">
           <Media
-            id="beginnings-and-endings"
+            id="record-beginnings-and-endings"
             format="jpg"
             title="Beginnings & Endings"
             href="https://wearebrightly.bandcamp.com/album/beginnings-endings"
@@ -103,7 +103,7 @@ function App() {
             </Tags>
           </Media>
           <Media
-            id="the-greylings"
+            id="record-the-greylings"
             format="jpg"
             title="The Greylings"
             href="https://wearebrightly.bandcamp.com/album/the-greylings"
@@ -115,7 +115,7 @@ function App() {
             </Tags>
           </Media>
           <Media
-            id="oh-infinity"
+            id="record-oh-infinity"
             format="jpg"
             title="Oh, Infinity"
             href="https://wearebrightly.bandcamp.com/album/oh-infinity"
@@ -127,7 +127,7 @@ function App() {
             </Tags>
           </Media>
           <Media
-            id="sorrow-and-joy"
+            id="record-sorrow-and-joy"
             format="jpg"
             title="One For Sorrow, Two For Joy"
             href="https://wearebrightly.bandcamp.com/album/one-for-sorrow-two-for-joy"
@@ -270,6 +270,41 @@ function App() {
             <Description>Music meets pyramid scheme</Description>
           </Media>
         </Grid>
+      </Section>
+
+      <Section>
+        <Heading>Reviews and Media</Heading>
+
+        <blockquote className="pl-2 grid gap-4">
+          "His songs might kick off sounding like formulaic indie folk, but
+          Melbourne’s Charlie Gleason writes such heartbreaking lyrics it’s hard
+          not to indulge yourself. With its mix of folk, pop and electronica,
+          debut album ‘Oh, Infinity’ is a profound collection of tracks with a
+          stellar lineup of Melbourne musicians behind it."
+          <div className="grid gap-2">
+            <img
+              src="/images/logo-nme.svg"
+              alt="NME logo"
+              className="block dark:invert"
+            />
+            <cite className="font-bold text-xs">—Review of "Oh, Infinity"</cite>
+          </div>
+        </blockquote>
+
+        <Table>
+          <Row
+            id="rugby"
+            title="Rugby"
+            data={['2016', 'One For Sorrow, Two For Joy']}
+            href="https://rugby.wearebrightly.com/"
+          />
+          <Row
+            id="another-rugby"
+            title="Review"
+            data={['2016', 'One For Sorrow, Two For Joy']}
+            href="https://rugby.wearebrightly.com/"
+          />
+        </Table>
       </Section>
 
       <Section>
