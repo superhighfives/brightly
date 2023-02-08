@@ -17,7 +17,11 @@
 - **News Stories**
   - [ ] [Zealous](https://zealous.co/about/archive-2/features-archive/charlie-gleason-electronic-folk-music/)
   - [ ] [Tone Deaf](https://tonedeaf.thebrag.com/premiere-brightly-unveils-stunning-new-lp-one-for-sorrow-two-for-joy/)
+  - [ ] [Tone Deaf](https://tonedeaf.thebrag.com/the-7-local-records-you-should-be-listening-to-this-week-7/)
+  - [ ] [Happy Mag](https://happymag.tv/feelin-dirty-brightly-writes-about-sex-death-privilege-and-ball-sports-on-rugby/)
 - **Reviews**
-  - [ ] [AAA Backstage](https://aaabackstage.com/album-review-brightly-one-for-sorrow-two-for-joy/)
+  - [ ] [AAA Backstage - One For Sorrow, Two For Joy](https://aaabackstage.com/album-review-brightly-one-for-sorrow-two-for-joy/)
+  - [ ] [Renowned For Sound - One For Sorrow, Two For Joy](https://renownedforsound.com/album-review-brightly-one-for-sorrow-two-for-joy/)
+  - [ ] [Pop Rinse Repeat - One For Sorrow, Two For Joy](http://www.poprinserepeat.com/2016/06/meet-brightly.html?m=1)
 - **Other**
   - [ ] [Kickstarter](https://www.kickstarter.com/projects/207221174/one-for-sorrow-two-for-joy-an-experiment-in-partic/description)
