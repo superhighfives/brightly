@@ -233,7 +233,7 @@ function App() {
             id="project-iwnlyg"
             format="svg"
             title="I Will Never Let You Go"
-            href="https://iwillneverletyougo.com/"
+            href="https://iwillneverletyougo.wearebrightly.com/"
           >
             <Description>A WebGL mashup between viewers</Description>
           </Media>
