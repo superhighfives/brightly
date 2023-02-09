@@ -290,6 +290,21 @@ function App() {
             <cite className="font-bold text-xs">—Review of "Oh, Infinity"</cite>
           </div>
         </blockquote>
+
+        <Table>
+          <Row
+            id="rugby"
+            title="Rugby"
+            data={['2016', 'One For Sorrow, Two For Joy']}
+            href="https://rugby.wearebrightly.com/"
+          />
+          <Row
+            id="another-rugby"
+            title="Review"
+            data={['2016', 'One For Sorrow, Two For Joy']}
+            href="https://rugby.wearebrightly.com/"
+          />
+        </Table>
       </Section>
 
       <Section>
