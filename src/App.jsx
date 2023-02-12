@@ -251,7 +251,7 @@ function App() {
             title="True"
             href="https://true.wearebrightly.com/"
           >
-            <Description>The WebAudio API meets karaoke</Description>
+            <Description>An immersive lyric video</Description>
           </Media>
           <Media
             id="project-tweetflight"

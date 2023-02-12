@@ -1,13 +1,13 @@
 # Brightly
 
 
-| Repo                    | Description | Client                                                                                                        | Server                                                    |
-| ----------------------- | ----------- | ------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| Rugby                   |             | [superhighfives/rugby][rugby] 🖐️                                                                               | [superhighfives/rugby-server][rugby-server] 🖐️             |
-| Tweetflight             |             | [superhighfives/tweetflight][tweetflight] 🖐️ [(archive)](tweetflight-archive) 🖐️                                | [superhighfives/tweetflight-server][tweetflight-server] ✅ |
-| True                    |             | [superhighfives/true][true] 🖐️ [(archive)][true-archive] 🖐️                                                     | N/A                                                       |
-| I Will Never Let You Go |             | [superhighfives/iwnlyg][iwnlyg] 🖐️ [(archive)][iwnlyg-archive] ✅                                               | N/A                                                       |
-| Beginnings & Endings    |             | [superhighfives/beginnings-and-endings][beginnings-and-endings] [(archive)][beginnings-and-endings-archive] 🖐️ | N/A                                                       |
+| Repo                    | Description                     | Client                                                                                                                | Server                                                           |
+| ----------------------- | ------------------------------- | --------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| Rugby                   | A love letter to the humble GIF | [superhighfives/rugby][rugby] (private)                                                                               | [superhighfives/rugby-server][rugby-server] (private)            |
+| Tweetflight             | The Twitter music video         | [superhighfives/tweetflight][tweetflight] (private) [(archive)](tweetflight-archive) (private)                        | [superhighfives/tweetflight-server][tweetflight-server] (public) |
+| True                    | An immersive lyric video        | [superhighfives/true][true] (private) [(archive)][true-archive] (private)                                             | N/A                                                              |
+| I Will Never Let You Go | A WebGL mashup between viewers  | [superhighfives/iwnlyg][iwnlyg] (private) [(archive)][iwnlyg-archive] (public)                                        | N/A                                                              |
+| Beginnings & Endings    | Music meets pyramid scheme      | [superhighfives/beginnings-and-endings][beginnings-and-endings] [(archive)][beginnings-and-endings-archive] (private) | N/A                                                              |
 
 [rugby]: https://github.com/superhighfives/rugby
 [rugby-server]: https://github.com/superhighfives/rugby-server
