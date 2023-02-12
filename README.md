@@ -1,5 +1,8 @@
 # Brightly
 
+The microsite linking together all the Brightly records, projects, and related services.
+
+## Related projects
 
 | Repo                    | Description                     | Client                                                                                                                | Server                                                           |
 | ----------------------- | ------------------------------- | --------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
