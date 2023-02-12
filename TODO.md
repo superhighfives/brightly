@@ -25,3 +25,10 @@
   - [ ] [Pop Rinse Repeat - One For Sorrow, Two For Joy](http://www.poprinserepeat.com/2016/06/meet-brightly.html?m=1)
 - **Other**
   - [ ] [Kickstarter](https://www.kickstarter.com/projects/207221174/one-for-sorrow-two-for-joy-an-experiment-in-partic/description)
+
+---
+
+Over the course of Brightly, we created a number of 
+
+- Add links
+- Add music
