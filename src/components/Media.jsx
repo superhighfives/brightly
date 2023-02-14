@@ -5,6 +5,7 @@ export default function Media({
   format,
   title,
   children,
+  metadata,
   type = false,
   href,
 }) {

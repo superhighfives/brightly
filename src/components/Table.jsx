@@ -18,7 +18,7 @@ export function Row({ id, title, data, href }) {
       <dt className="truncate font-bold text-xs justify-self-start max-w-full">
         <Title size="xs">{title}</Title>
       </dt>
-      <dd className="flex font-mono font-semibold text-slate-500 dark:text-yellow-500 text-2xs truncate gap-8 pl-1">
+      <dd className="flex font-mono font-semibold text-slate-500 dark:text-yellow-600 text-2xs truncate gap-8 pl-1">
         {data.map((item, i) => (
           <span
             key={i}
