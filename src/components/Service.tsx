@@ -1,6 +1,17 @@
+import type { IconType } from 'react-icons'
 import Title from '~/components/Title'
 
-export default function Service({ href, Icon, title, size = 'md' }) {
+export default function Service({
+  href,
+  Icon,
+  title,
+  size = 'md',
+}: {
+  href: string
+  Icon: IconType
+  title: string
+  size?: 'md' | 'sm'
+}) {
   const variantsSizes = {
     md: 'w-12 h-12 pl-1',
     sm: 'w-6 h-6 pl-2',

@@ -8,9 +8,6 @@ import mdx from '@mdx-js/rollup'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), mdx(), svgr(), eslint()],
-  build: {
-    assetsInlineLimit: Infinity,
-  },
   resolve: {
     alias: {
       '~': path.resolve(__dirname, './src'),

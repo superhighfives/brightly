@@ -15,7 +15,7 @@ export default function Publications() {
         debut album ‘Oh, Infinity’ is a profound collection of tracks with a
         stellar lineup of Melbourne musicians behind it."
         <div className="grid gap-2">
-          <NMELogo alt="NME logo" className="block dark:text-yellow-600" />
+          <NMELogo className="block dark:text-yellow-600" />
           <cite className="-ml-3 font-semibold text-2xs dark:text-yellow-600">
             —Review of "Oh, Infinity"
           </cite>

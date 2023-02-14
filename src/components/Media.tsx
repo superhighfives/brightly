@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react'
 import Title from '~/components/Title'
 
 export default function Media({
@@ -5,9 +6,15 @@ export default function Media({
   format,
   title,
   children,
-  metadata,
-  type = false,
+  type,
   href,
+}: {
+  id: string
+  format: string
+  title: string
+  children: ReactNode
+  type?: 'icon' | 'record'
+  href: string
 }) {
   const variantsRounded = {
     icon: 'rounded-full',

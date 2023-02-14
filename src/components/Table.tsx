@@ -1,6 +1,7 @@
+import type { ReactNode } from 'react'
 import Title from '~/components/Title'
 
-export default function Table({ children }) {
+export default function Table({ children }: { children: ReactNode }) {
   return (
     <dl className="divide-y divide-slate-300/50 dark:divide-yellow-700/50">
       {children}
@@ -8,7 +9,17 @@ export default function Table({ children }) {
   )
 }
 
-export function Row({ id, title, data, href }) {
+export function Row({
+  id,
+  title,
+  data,
+  href,
+}: {
+  id: string
+  title: string
+  data: string[]
+  href: string
+}) {
   return (
     <a
       key={id}
