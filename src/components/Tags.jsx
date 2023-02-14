@@ -1,6 +1,6 @@
 export default function Tags({ children }) {
   return (
-    <div className="max-w-full justify-self-start flex gap-2 min-w-0 ml-2 space-x-4">
+    <div className="max-w-full justify-self-start flex gap-2 min-w-0 ml-2">
       {children}
     </div>
   )
@@ -8,7 +8,7 @@ export default function Tags({ children }) {
 
 export function Tag({ children }) {
   return (
-    <p className="truncate text-2xs font-mono font-semibold text-slate-500 dark:text-yellow-500">
+    <p className="truncate text-2xs font-mono font-semibold text-slate-500 dark:text-yellow-600">
       {children}
     </p>
   )
