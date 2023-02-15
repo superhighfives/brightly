@@ -2,13 +2,13 @@ import type { IconType } from 'react-icons'
 import Title from '~/components/Title'
 
 export default function Service({
-  href,
   Icon,
+  href,
   title,
   size = 'md',
 }: {
-  href: string
   Icon: IconType
+  href: string
   title: string
   size?: 'md' | 'sm'
 }) {

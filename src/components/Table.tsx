@@ -1,9 +1,22 @@
 import type { ReactNode } from 'react'
+import type { IconType } from 'react-icons'
 import Title from '~/components/Title'
 
-export default function Table({ children }: { children: ReactNode }) {
+export default function Table({
+  children,
+  format = 'default',
+}: {
+  children: ReactNode
+  format?: 'default' | 'data'
+}) {
+  const variantsFormats = {
+    default: '',
+    data: 'font-mono',
+  }
   return (
-    <dl className="divide-y divide-slate-300/50 dark:divide-yellow-700/50">
+    <dl
+      className={`divide-y divide-slate-300/50 dark:divide-yellow-700/50 ${variantsFormats[format]}`}
+    >
       {children}
     </dl>
   )
@@ -14,11 +27,13 @@ export function Row({
   title,
   data,
   href,
+  Icon,
 }: {
   id: string
   title: string
   data: string[]
   href: string
+  Icon?: IconType
 }) {
   return (
     <a
@@ -26,15 +41,22 @@ export function Row({
       href={href}
       className="py-2 group grid items-center xs:grid-cols-2 gap-4 outline-yellow-500"
     >
-      <dt className="truncate font-bold text-xs justify-self-start max-w-full">
+      <dt className="truncate font-bold text-xs justify-self-start max-w-full flex">
         <Title size="xs">{title}</Title>
       </dt>
-      <dd className="flex font-mono font-semibold text-slate-500 dark:text-yellow-600 text-2xs truncate gap-8 pl-1">
+      <dd
+        className={`flex font-mono font-semibold text-slate-500 dark:text-yellow-600 text-2xs truncate gap-8 pl-1 ${
+          data.length === 1 ? 'xs:justify-end' : ''
+        }`}
+      >
         {data.map((item, i) => (
           <span
             key={i}
-            className={i === data.length - 1 ? 'truncate max-w-full' : ''}
+            className={`${i === data.length - 1 ? 'truncate max-w-full' : ''}`}
           >
+            {i === 0 && Icon ? (
+              <Icon className={`inline box-content p-1 flex-shrink-0`} />
+            ) : null}
             {item}
           </span>
         ))}
