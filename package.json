@@ -10,6 +10,7 @@
     "deploy": "npm run build && npx wrangler pages publish dist"
   },
   "dependencies": {
+    "link-preview-js": "^3.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.1",

@@ -1,7 +1,7 @@
 import Heading from '~/components/Heading'
 import Section from '~/components/Section'
 import Group from '~/components/Group'
-import Table, { Row } from '~/components/Table'
+import Table, { Article } from '~/components/Table'
 import { ReactComponent as NMELogo } from '~/assets/logo-nme.svg'
 
 export default function Publications() {
@@ -27,17 +27,15 @@ export default function Publications() {
       <Group size="sm">
         <Heading size="sm">Publications and Coverage</Heading>
         <Table>
-          <Row
+          <Article
             id="rugby"
             title="Rugby"
-            data={['2016', 'One For Sorrow, Two For Joy']}
             href="https://rugby.wearebrightly.com/"
           />
-          <Row
+          <Article
             id="another-rugby"
-            title="Review"
-            data={['2016', 'One For Sorrow, Two For Joy']}
-            href="https://rugby.wearebrightly.com/"
+            title="IWNLYG"
+            href="https://iwillneverletyougo.wearebrightly.com/"
           />
         </Table>
       </Group>
