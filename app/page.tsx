@@ -8,20 +8,25 @@ import Projects from '@/app/sections/Projects'
 import Publications from '@/app/sections/Publications'
 import { fetchData } from '@/lib/api'
 
+import Visuals from './sections/Visuals'
+
 import data from '@/data/articles.json'
 
 export default async function Home() {
   const articles = await fetchData(data)
 
   return (
-    <Layout>
-      <Logo />
-      <Intro />
-      <Listen />
-      <Discography />
-      <Projects />
-      <Publications articles={articles} />
-      <Social />
-    </Layout>
+    <>
+      <Visuals />
+      <Layout>
+        <Logo />
+        <Intro />
+        <Listen />
+        <Discography />
+        <Projects />
+        <Publications articles={articles} />
+        <Social />
+      </Layout>
+    </>
   )
 }
