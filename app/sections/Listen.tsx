@@ -8,11 +8,11 @@ import {
   SiYoutubemusic,
   SiTidal,
 } from 'react-icons/si'
-import Service from '~/components/Service'
-import Heading from '~/components/Heading'
-import Section from '~/components/Section'
-import Group from '~/components/Group'
-import Grid from '~/components/Grid'
+import Service from '@/app/components/Service'
+import Heading from '@/app/components/Heading'
+import Section from '@/app/components/Section'
+import Group from '@/app/components/Group'
+import Grid from '@/app/components/Grid'
 
 export default function Listen() {
   return (

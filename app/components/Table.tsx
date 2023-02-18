@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
 import type { IconType } from 'react-icons'
-import Title from '~/components/Title'
+import Title from '@/app/components/Title'
 
 export default function Table({
   children,

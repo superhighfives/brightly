@@ -1,10 +1,10 @@
-import Heading from '~/components/Heading'
-import Section from '~/components/Section'
-import Group from '~/components/Group'
-import Media from '~/components/Media'
-import Description from '~/components/Description'
-import Table, { Row } from '~/components/Table'
-import Grid from '~/components/Grid'
+import Heading from '@/app/components/Heading'
+import Section from '@/app/components/Section'
+import Group from '@/app/components/Group'
+import Media from '@/app/components/Media'
+import Description from '@/app/components/Description'
+import Table, { Row } from '@/app/components/Table'
+import Grid from '@/app/components/Grid'
 import { SiGithub } from 'react-icons/si'
 
 export default function Projects() {

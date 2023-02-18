@@ -1,10 +1,10 @@
-import Grid from '~/components/Grid'
-import Tags, { Tag } from '~/components/Tags'
-import Heading from '~/components/Heading'
-import Section from '~/components/Section'
-import Group from '~/components/Group'
-import Media from '~/components/Media'
-import Table, { Row } from '~/components/Table'
+import Grid from '@/app/components/Grid'
+import Tags, { Tag } from '@/app/components/Tags'
+import Heading from '@/app/components/Heading'
+import Section from '@/app/components/Section'
+import Group from '@/app/components/Group'
+import Media from '@/app/components/Media'
+import Table, { Row } from '@/app/components/Table'
 
 export default function Discography() {
   return (
@@ -97,7 +97,7 @@ export default function Discography() {
             href="https://www.youtube.com/watch?v=B9QeLOa0n-k"
           />
           <Row
-            id="doubt-acoustic"
+            id="doubt-ktsche-remix"
             title="Doubt (Ktsche Remix)"
             data={['2013', 'Doubt (Ktsche Remix)']}
             href="https://www.youtube.com/watch?v=Ih19EysHaY8"

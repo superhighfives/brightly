@@ -1,7 +1,7 @@
-import Section from '~/components/Section'
-import Heading from '~/components/Heading'
-import Grid from '~/components/Grid'
-import Service from '~/components/Service'
+import Section from '@/app/components/Section'
+import Heading from '@/app/components/Heading'
+import Grid from '@/app/components/Grid'
+import Service from '@/app/components/Service'
 
 import { SiInstagram, SiTwitter, SiTumblr } from 'react-icons/si'
 

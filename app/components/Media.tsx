@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react'
-import Title from '~/components/Title'
+import Title from '@/app/components/Title'
 
 export default function Media({
   id,
