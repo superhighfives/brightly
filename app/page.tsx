@@ -8,7 +8,7 @@ import Projects from '@/app/sections/Projects'
 import Publications from '@/app/sections/Publications'
 import { fetchData } from '@/lib/api'
 
-import data from '@/data/articles.csv'
+import data from '@/data/articles.json'
 
 export default async function Home() {
   const articles = await fetchData(data)
