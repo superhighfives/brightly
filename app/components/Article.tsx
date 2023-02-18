@@ -1,20 +1,20 @@
 import Title from '@/app/components/Title'
 
-export default function Article({
-  date,
-  type,
-  publication,
-  title,
-  href,
-  preview,
-}: {
-  date: string
+export interface Article {
   type: string
   publication: string
   title: string
   href: string
   preview: any
-}) {
+}
+
+export default function Article({
+  type,
+  publication,
+  title,
+  href,
+  preview,
+}: Article) {
   return (
     <a
       key={href}
@@ -36,8 +36,7 @@ export default function Article({
       <span
         className={`hidden xs:block min-w-[5em] font-mono font-semibold text-slate-500 dark:text-yellow-600 text-2xs`}
       >
-        <div>{type}</div>
-        <div>{date}</div>
+        {type}
       </span>
       <span className="font-bold text-xs justify-self-start max-w-full grid">
         <Title size="xs">{title}</Title>

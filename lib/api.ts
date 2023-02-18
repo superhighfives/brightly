@@ -18,5 +18,5 @@ export async function fetchData(items: any[]) {
     })
   )
 
-  return output
+  return output.sort((a, b) => (a.date > b.date ? 1 : -1))
 }

@@ -3,8 +3,9 @@ import Section from '@/app/components/Section'
 import Group from '@/app/components/Group'
 import Table from '@/app/components/Table'
 import Article from '@/app/components/Article'
+import type { Article as IArticle } from '@/app/components/Article'
 
-export default function Publications({ articles }: { articles: any[] }) {
+export default function Publications({ articles }: { articles: IArticle[] }) {
   return (
     <Section>
       <Group>
