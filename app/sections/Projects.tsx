@@ -65,6 +65,7 @@ export default function Projects() {
             data={['superhighfives/rugby']}
             href="https://github.com/superhighfives/rugby"
             Icon={SiGithub}
+            size="2xs"
           />
           <Row
             id="repo-iwnlyg"
@@ -72,6 +73,7 @@ export default function Projects() {
             data={['superhighfives/i-will-never-let-you-go']}
             href="https://github.com/superhighfives/i-will-never-let-you-go"
             Icon={SiGithub}
+            size="2xs"
           />
           <Row
             id="repo-true"
@@ -79,6 +81,7 @@ export default function Projects() {
             data={['superhighfives/true']}
             href="https://github.com/superhighfives/true"
             Icon={SiGithub}
+            size="2xs"
           />
           <Row
             id="repo-tweetflight"
@@ -86,6 +89,7 @@ export default function Projects() {
             data={['superhighfives/rugby']}
             href="https://github.com/superhighfives/rugby"
             Icon={SiGithub}
+            size="2xs"
           />
           <Row
             id="repo-beginnings-and-endings"
@@ -93,6 +97,7 @@ export default function Projects() {
             data={['superhighfives/beginnings-and-endings']}
             href="https://github.com/superhighfives/beginnings-and-endings"
             Icon={SiGithub}
+            size="2xs"
           />
         </Table>
       </Group>

@@ -22,12 +22,12 @@ export default function Article({
       className="py-2 group flex items-center gap-3 outline-yellow-500"
     >
       <div className="w-4 h-4 flex-shrink-0 relative ml-2">
-        <div className="inset-0 absolute bg-yellow-400 z-10 overflow-hidden rounded-full"></div>
+        <div className="inset-0 absolute bg-slate-200 dark:bg-yellow-400 z-10 overflow-hidden rounded-full"></div>
         {preview ? (
           <img
             width="16"
             height="16"
-            className="absolute inset-0 sepia overflow-hidden rounded-full z-20 mix-blend-multiply contrast-200"
+            className="absolute inset-0 grayscale dark:sepia overflow-hidden rounded-full z-20 mix-blend-multiply contrast-200"
             src={preview?.favicons[0]}
             alt=""
           />

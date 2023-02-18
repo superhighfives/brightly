@@ -27,12 +27,14 @@ export function Row({
   title,
   data,
   href,
+  size = 'xs',
   Icon,
 }: {
   id: string
   title: string
   data: string[]
   href: string
+  size?: '2xs' | 'xs' | 'sm' | 'md' | 'lg'
   Icon?: IconType
 }) {
   return (
@@ -42,7 +44,7 @@ export function Row({
       className="py-2 group grid items-center xs:grid-cols-2 gap-4 outline-yellow-500"
     >
       <dt className="truncate font-bold text-xs justify-self-start max-w-full flex">
-        <Title size="xs">{title}</Title>
+        <Title size={size}>{title}</Title>
       </dt>
       <dd
         className={`flex font-mono font-semibold text-slate-500 dark:text-yellow-600 text-2xs truncate gap-8 pl-1 ${
