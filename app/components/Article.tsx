@@ -45,9 +45,11 @@ export default function Article({
         >
           <span className="ml-1 truncate max-w-full">
             <span className="pr-2 text-slate-600 dark:text-yellow-500">
-              {publication}:
+              {publication}
+              {''}
+              {preview?.description || preview?.title ? ':' : ''}
             </span>
-            {preview ? preview.description || preview.title : ''}{' '}
+            {preview?.description || preview?.title}
           </span>
         </span>
       </span>
