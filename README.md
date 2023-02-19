@@ -4,13 +4,13 @@ The microsite linking together all the Brightly records, projects, and related s
 
 ## Related projects
 
-|                     | Repo                    | Description                   | Client                                                                              | Server                                                  |
-| ------------------- | ----------------------- | ----------------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------- |
-| ![!img-rugby]       | Rugby                   | Love letter to the humble GIF | [superhighfives/rugby][rugby]                                                       | [superhighfives/rugby-server][rugby-server]             |
-| ![!img-tweetflight] | Tweetflight             | Twitter karaoke               | [superhighfives/tweetflight][tweetflight] ([archive][tweetflight-archive])          | [superhighfives/tweetflight-server][tweetflight-server] |
-| ![!img-true]        | True                    | Immersive lyric video         | [superhighfives/true][true] ([archive][true-archive])                               | N/A                                                     |
-| ![!img-iwnlyg]      | I Will Never Let You Go | WebGL webcam mashup           | [superhighfives/i-will-never-let-you-go][iwnlyg] ([archive][iwnlyg-archive])        | N/A                                                     |
-| ![!img-beginnings]  | Beginnings & Endings    | Musical pyramid scheme        | [superhighfives/beginnings-and-endings][beginnings] ([archive][beginnings-archive]) | N/A                                                     |
+|                     | Repo                    | Description                   | Client                                                               | Server                                   |
+| ------------------- | ----------------------- | ----------------------------- | -------------------------------------------------------------------- | ---------------------------------------- |
+| ![!img-rugby]       | Rugby                   | Love letter to the humble GIF | [rugby][rugby]                                                       | [rugby-server][rugby-server]             |
+| ![!img-tweetflight] | Tweetflight             | Twitter karaoke               | [tweetflight][tweetflight] ([archive][tweetflight-archive])          | [tweetflight-server][tweetflight-server] |
+| ![!img-true]        | True                    | Immersive lyric video         | [true][true] ([archive][true-archive])                               | N/A                                      |
+| ![!img-iwnlyg]      | I Will Never Let You Go | WebGL webcam mashup           | [i-will-never-let-you-go][iwnlyg] ([archive][iwnlyg-archive])        | N/A                                      |
+| ![!img-beginnings]  | Beginnings & Endings    | Musical pyramid scheme        | [beginnings-and-endings][beginnings] ([archive][beginnings-archive]) | N/A                                      |
 
 ---
 
@@ -68,4 +68,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 [!img-tweetflight]: https://user-images.githubusercontent.com/449385/218269463-b2c95682-4870-445a-947f-79ff60a08f03.svg
 [!img-true]: https://user-images.githubusercontent.com/449385/218269406-82420e40-2ef1-4f2d-b696-78a8f2e10fde.svg
 [!img-iwnlyg]: https://user-images.githubusercontent.com/449385/218269536-9ad50c4e-85f1-463c-923d-996ddd2e6686.svg
-[!img-beginnings]: https://user-images.githubusercontent.com/449385/218269536-9ad50c4e-85f1-463c-923d-996ddd2e6686.svg
+[!img-beginnings]: https://user-images.githubusercontent.com/449385/218269766-ebb5a6f5-e78e-4125-bb84-ebee65152007.svg
