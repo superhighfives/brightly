@@ -51,7 +51,7 @@ export default function Discography() {
           <Media
             id="record-sorrow-and-joy"
             format="jpg"
-            title="One For Sorrow, Two For Joy"
+            title="One For Sorrow, Two For&nbsp;Joy"
             href="https://wearebrightly.bandcamp.com/album/one-for-sorrow-two-for-joy"
             type="record"
           >

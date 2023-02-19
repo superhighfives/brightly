@@ -17,12 +17,11 @@ export default function Service({
     sm: 'w-6 h-6 pl-2',
   }
   return (
-    <a
-      className="grid gap-2 pr-1 outline-yellow-500 group min-w-0 p-1"
-      href={href}
-    >
+    <a className="grid gap-2 pr-1 outline-yellow-500 group min-w-0" href={href}>
       <Icon className={`box-content pt-1 ${variantsSizes[size]}`} />
-      <Title size="xs">{title}</Title>
+      <Title className="xs:text-xs" size="2xs">
+        {title}
+      </Title>
     </a>
   )
 }
