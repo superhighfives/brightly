@@ -10,7 +10,11 @@ export default function Grid({
   const variantsColumns = {
     none: '',
     media: 'xs:grid-cols-2',
-    services: 'grid-cols-2 xs:grid-cols-4',
+    services: 'grid-cols-3 xs:grid-cols-4',
   }
-  return <div className={`grid ${variantsColumns[cols]} gap-4`}>{children}</div>
+  return (
+    <div className={`grid ${variantsColumns[cols]} gap-0 gap-y-4 xs:gap-4`}>
+      {children}
+    </div>
+  )
 }

@@ -41,7 +41,7 @@ export function Row({
     <a
       key={id}
       href={href}
-      className="py-2 group grid items-center xs:grid-cols-2 gap-4 outline-yellow-500"
+      className="py-2 group grid items-center xs:grid-cols-2 gap-2 xs:gap-4 outline-yellow-500"
     >
       <dt className="truncate font-bold text-xs justify-self-start max-w-full flex">
         <Title size={size}>{title}</Title>

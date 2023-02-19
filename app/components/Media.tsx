@@ -19,12 +19,12 @@ export default function Media({
   const variantsRounded = {
     icon: 'rounded-full',
     record:
-      'rounded-md grayscale group-hover:grayscale-0 group-hover:border-slate-300 dark:group-hover:border-yellow-400',
+      'rounded-md grayscale dark:sepia group-hover:grayscale-0 dark:group-hover:sepia-0 group-hover:border-slate-300 dark:group-hover:border-yellow-400',
   }
   return (
     <a
       href={href}
-      className="flex items-center gap-2 p-2 group outline-yellow-500"
+      className="flex items-start gap-2 p-2 group outline-yellow-500"
     >
       <img
         alt=""
@@ -34,7 +34,7 @@ export default function Media({
         src={`/images/${id}.${format}`}
       />
       <div className="grid gap-1 flex-col min-w-0">
-        <Title>{title}</Title>
+        <Title truncate={false}>{title}</Title>
         {children}
       </div>
     </a>
