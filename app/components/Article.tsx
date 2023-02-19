@@ -49,7 +49,7 @@ export default function Article({
               {''}
               {preview?.description || preview?.title ? ':' : ''}
             </span>
-            {preview?.description || preview?.title}
+            {(preview?.description || preview?.title || '').trim()}
           </span>
         </span>
       </span>
