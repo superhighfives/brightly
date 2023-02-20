@@ -3,7 +3,7 @@ import Heading from '@/app/components/Heading'
 import Grid from '@/app/components/Grid'
 import Service from '@/app/components/Service'
 
-import { SiInstagram, SiTwitter, SiTumblr } from 'react-icons/si'
+import { SiInstagram, SiTwitter, SiTumblr, SiFacebook } from 'react-icons/si'
 
 export default function Social() {
   return (
@@ -26,6 +26,12 @@ export default function Social() {
           href="https://tumblr.com/wearebrightly"
           Icon={SiTumblr}
           title="Tumblr"
+          size="sm"
+        />
+        <Service
+          href="https://facebook.com/wearebrightly"
+          Icon={SiFacebook}
+          title="Facebook"
           size="sm"
         />
       </Grid>
