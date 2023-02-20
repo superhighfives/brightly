@@ -24,7 +24,7 @@ export default function Media({
   return (
     <a
       href={href}
-      className="flex items-start gap-2 p-2 group outline-yellow-500"
+      className="flex self-start items-start gap-2 p-2 group outline-yellow-500"
     >
       <img
         alt=""

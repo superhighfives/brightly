@@ -117,7 +117,7 @@ export default function Discography() {
           <Row
             id="wyfiwily-remix"
             title="Will You Feel It When I Leave You? (Brightly Remix)"
-            data={['2014', 'Selfish Price (Ceres)']}
+            data={['2014', 'Selfish Prick (Ceres)']}
             href="https://ceresband.bandcamp.com/track/will-you-feel-it-when-i-leave-you-brightly-remix"
           />
           <Row
