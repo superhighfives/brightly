@@ -1,21 +1,35 @@
 'use client'
 
-import { Canvas } from '@react-three/fiber'
+import { Canvas, useFrame, useThree, extend } from '@react-three/fiber'
+import { useRef } from 'react'
+import { ShaderMaterial } from 'three'
+import { WaveMaterial } from './visuals/WaveMaterial'
+import { EffectComposer, Bloom } from '@react-three/postprocessing'
+
+function ShaderPlane() {
+  const ref = useRef<ShaderMaterial>(null)
+  const { width, height } = useThree((state) => state.viewport)
+  useFrame((state, delta) => (ref.current.time += delta))
+  return (
+    <mesh scale={[width, height, 1]}>
+      <planeGeometry />
+      <waveMaterial
+        ref={ref}
+        key={WaveMaterial.key}
+        toneMapped={true}
+        colorStart={'yellow'}
+        colorEnd={'orange'}
+        transparent={true}
+      />
+    </mesh>
+  )
+}
 
 export default function Visuals() {
   return (
     <div className="fixed inset-0 -z-10">
-      <Canvas
-        shadows={true}
-        camera={{
-          position: [-6, 7, 7],
-        }}
-      >
-        <mesh position={[0, -1, 0]} recieveShadow={true}>
-          <boxBufferGeometry args={[30, 1, 10]} />
-          <meshPhysicalMaterial color="yellow" />
-        </mesh>
-        <ambientLight color={'white'} intensity={0.05} />
+      <Canvas orthographic={true}>
+        <ShaderPlane />
       </Canvas>
     </div>
   )
