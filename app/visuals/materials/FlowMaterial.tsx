@@ -112,7 +112,9 @@ const FlowMaterial = shaderMaterial(
     }
   `,
   (self) => {
-    self.extensions.derivatives = true
+    if (self) {
+      self.extensions.derivatives = true
+    }
   }
 )
 
