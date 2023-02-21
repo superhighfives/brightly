@@ -114,7 +114,7 @@ const FlowMaterial = shaderMaterial(
       vec4 final = vec4(vec3(color), mod(noise, spacing));
 
       if(dark) {
-        opacity = 1.0;
+        opacity = 1.5;
       } else {
         opacity = 0.75;
       }
