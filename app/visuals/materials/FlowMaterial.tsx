@@ -114,9 +114,9 @@ const FlowMaterial = shaderMaterial(
       vec4 final = vec4(vec3(color), mod(noise, spacing));
 
       if(dark) {
-        opacity = 0.8;
+        opacity = 1.0;
       } else {
-        opacity = 0.6;
+        opacity = 0.75;
       }
       
       gl_FragColor = vec4(vec3(final), mix(0.0, final.a, clamp(0.0, opacity, time / 2.0)));
