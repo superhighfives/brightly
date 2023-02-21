@@ -1,15 +1,20 @@
 'use client'
 
 import { useAspect } from '@react-three/drei'
-import { Canvas, useFrame, useThree } from '@react-three/fiber'
+import { Canvas, useFrame } from '@react-three/fiber'
 import { useRef } from 'react'
-import { ShaderMaterial } from 'three'
 import { FlowMaterial } from './materials/FlowMaterial'
 
 function ShaderPlane() {
-  const ref = useRef<ShaderMaterial>(null)
+  const ref = useRef<any>(null)
   const size = useAspect(1024, 768)
-  useFrame((state, delta) => ((ref.current as any).time += delta))
+  useFrame((state, delta) => {
+    ref.current.dark =
+      window.matchMedia &&
+      window.matchMedia('(prefers-color-scheme: dark)').matches
+    ref.current.time += delta
+    ref.current.scroll = window.pageYOffset
+  })
   return (
     <mesh scale={size}>
       <planeGeometry />

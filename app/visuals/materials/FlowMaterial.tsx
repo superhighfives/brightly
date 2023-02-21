@@ -11,6 +11,8 @@ declare module '@react-three/fiber' {
 const FlowMaterial = shaderMaterial(
   {
     time: 0,
+    dark: false,
+    scroll: 0,
   },
   /* glsl */ `
     varying vec2 vUv;
@@ -27,6 +29,8 @@ const FlowMaterial = shaderMaterial(
     #define PI 3.14159265359
   
     uniform float time;
+    uniform bool dark;
+    uniform int scroll;
     varying vec2 vUv;
 
     vec3 hash33(vec3 p) {
@@ -62,21 +66,21 @@ const FlowMaterial = shaderMaterial(
     }
 
     void main() {
-      vec2 resolution = vec2(0.0, 0.0);
       vec2 uv = vUv.xy;
       uv *= 8.0;
       float repeatSize = 16.;
-      float x = uv.x - mod(float(time) / 40.0, repeatSize / 2.);
-      float y = uv.y;
+      float x = (uv.x - mod(float(time) / 30.0, repeatSize / 2.));
+      float y = -uv.y;
       
       vec2 ab;
       float noise;
       float noiseA, noiseB;
+      float opacity;
 
       ab = smoothRepeatStart(x, repeatSize);
       noiseA = tetraNoise(16. + vec3(vec2(ab.x, uv.y) * 1.2, 0)) * .5;
       noiseB = tetraNoise(16. + vec3(vec2(ab.y, uv.y) * 1.2, 0)) * .5;
-      noise = smoothRepeatEnd(noiseA, noiseB, x, repeatSize);
+      noise = smoothRepeatEnd(noiseA, noiseB, x, repeatSize) - float(scroll) / 50000.0;
       
       ab = smoothRepeatStart(y, repeatSize / 2.);
       noiseA = tetraNoise(vec3(vec2(uv.x, ab.x) * .5, 0)) * 2.;
@@ -108,7 +112,14 @@ const FlowMaterial = shaderMaterial(
       color = blendMultiply(vec3(lines), color);
 
       vec4 final = vec4(vec3(color), mod(noise, spacing));
-      gl_FragColor = vec4(vec3(final), mix(0.0, final.a, clamp(0.0, 1.0, time / 2.0)));
+
+      if(dark) {
+        opacity = 0.8;
+      } else {
+        opacity = 0.6;
+      }
+      
+      gl_FragColor = vec4(vec3(final), mix(0.0, final.a, clamp(0.0, opacity, time / 2.0)));
     }
   `,
   (self) => {
