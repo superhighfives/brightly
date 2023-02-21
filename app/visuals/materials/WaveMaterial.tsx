@@ -8,7 +8,7 @@ const WaveMaterial = shaderMaterial(
     colorStart: new THREE.Color('#505050'),
     colorEnd: new THREE.Color('black'),
   },
-  `
+  /* glsl */ `
       varying vec2 vUv;
       void main() {
         vec4 modelPosition = modelMatrix * vec4(position, 1.0);
@@ -17,7 +17,7 @@ const WaveMaterial = shaderMaterial(
         gl_Position = projectionPosition;
         vUv = uv;
       }`,
-  `
+  /* glsl */ `
       vec3 mod289(vec3 x)
       {
         return x - floor(x * (1.0 / 289.0)) * 289.0;
@@ -195,8 +195,8 @@ const WaveMaterial = shaderMaterial(
         strength = clamp(strength, 0.0, 1.0);
         vec3 color = mix(colorStart, colorEnd, strength);
         gl_FragColor = vec4(color, time / 5.0);
-        #include <tonemapping_fragment>
-        #include <encodings_fragment>
+        // #include <tonemapping_fragment>
+        // #include <encodings_fragment>
       }`
 )
 
