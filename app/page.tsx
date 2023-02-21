@@ -13,7 +13,7 @@ import Visuals from './visuals/Visuals'
 import data from '@/data/articles.json'
 
 export default async function Home() {
-  const articles = [] || (await fetchData(data))
+  const articles = await fetchData(data)
 
   return (
     <>
