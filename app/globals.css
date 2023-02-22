@@ -20,5 +20,5 @@ body {
   display: grid;
   place-items: center;
   min-width: 280px;
-  min-height: 100vh;
+  min-height: stretch;
 }

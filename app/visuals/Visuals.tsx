@@ -25,7 +25,7 @@ function ShaderPlane() {
 
 export default function Visuals() {
   return (
-    <div className="fixed inset-0 -z-10">
+    <div className="fixed top-0 left-0 h-screen w-screen -z-10">
       <Canvas orthographic={true}>
         <ShaderPlane />
       </Canvas>

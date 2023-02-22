@@ -67,7 +67,7 @@ const FlowMaterial = shaderMaterial(
 
     void main() {
       vec2 uv = vUv.xy;
-      uv *= 8.0;
+      uv *= 4.0;
       float repeatSize = 16.;
       float x = (uv.x - mod(float(time) / 30.0, repeatSize / 2.));
       float y = -uv.y;
@@ -114,7 +114,7 @@ const FlowMaterial = shaderMaterial(
       vec4 final = vec4(vec3(color), mod(noise, spacing));
 
       if(dark) {
-        opacity = 1.5;
+        opacity = 2.5;
       } else {
         opacity = 0.75;
       }
