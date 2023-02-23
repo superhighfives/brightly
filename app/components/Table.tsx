@@ -48,7 +48,7 @@ export function Row({
       </dt>
       <dd
         className={`flex font-mono font-semibold text-slate-500 dark:text-yellow-600 text-2xs truncate gap-8 pl-1 ${
-          data.length === 1 ? 'xs:justify-end' : ''
+          data.length === 1 ? 'xs:justify-end' : 'ml-1'
         }`}
       >
         {data.map((item, i) => (
