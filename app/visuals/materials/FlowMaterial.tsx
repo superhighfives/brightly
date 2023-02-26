@@ -69,7 +69,7 @@ const FlowMaterial = shaderMaterial(
       vec2 uv = vUv.xy;
       uv *= 4.0;
       float repeatSize = 16.;
-      float x = (uv.x - mod(float(time) / 20.0, repeatSize / 2.));
+      float x = (uv.x - mod(float(time) / 15.0, repeatSize / 2.));
       float y = -uv.y;
       
       vec2 ab;
