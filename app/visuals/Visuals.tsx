@@ -9,10 +9,15 @@ function ShaderPlane() {
   const ref = useRef<any>(null)
   const size = useAspect(1024, 768)
   useFrame((state, delta) => {
-    ref.current.dark =
+    const prefersDark =
       window.matchMedia &&
       window.matchMedia('(prefers-color-scheme: dark)').matches
-    ref.current.time += delta
+    const prefersReducedMotion =
+      window.matchMedia &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+    ref.current.dark = prefersDark
+    ref.current.time = prefersReducedMotion ? 100 : ref.current.time + delta
     ref.current.scroll = window.pageYOffset
   })
   return (
