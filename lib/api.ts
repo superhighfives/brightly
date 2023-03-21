@@ -25,7 +25,9 @@ export async function fetchData(items: any[]) {
       })
     )
 
-    return output.sort((a, b) => (a.date < b.date ? 1 : -1))
+    return output
+      .sort((a, b) => (a.date < b.date ? 1 : -1))
+      .filter((item) => item !== undefined)
   } catch (e) {
     console.warn(e)
     return []
