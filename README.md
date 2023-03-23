@@ -6,11 +6,11 @@ The microsite linking together all the Brightly records, projects, and related s
 
 |                     | Repo                    | Description                   | Client                                                               | Server                                   |
 | ------------------- | ----------------------- | ----------------------------- | -------------------------------------------------------------------- | ---------------------------------------- |
-| ![!img-rugby]       | Rugby                   | Love letter to the humble GIF | [rugby][rugby]                                                       | [rugby-server][rugby-server]             |
-| ![!img-tweetflight] | Tweetflight             | Twitter karaoke               | [tweetflight][tweetflight] ([archive][tweetflight-archive])          | [tweetflight-server][tweetflight-server] |
-| ![!img-true]        | True                    | Immersive lyric video         | [true][true] ([archive][true-archive])                               | N/A                                      |
-| ![!img-iwnlyg]      | I Will Never Let You Go | WebGL webcam mashup           | [i-will-never-let-you-go][iwnlyg] ([archive][iwnlyg-archive])        | N/A                                      |
-| ![!img-beginnings]  | Beginnings & Endings    | Musical pyramid scheme        | [beginnings-and-endings][beginnings] ([archive][beginnings-archive]) | N/A                                      |
+| ![!img-rugby]       | **Rugby**                   | Love letter to the humble GIF | [rugby][rugby]                                                       | [rugby-server][rugby-server]             |
+| ![!img-tweetflight] | **Tweetflight**             | Twitter karaoke               | [tweetflight][tweetflight] ([archive][tweetflight-archive])          | [tweetflight-server][tweetflight-server] |
+| ![!img-true]        | **True**                    | Immersive lyric video         | [true][true] ([archive][true-archive])                               | N/A                                      |
+| ![!img-iwnlyg]      | **I Will Never Let You Go** | WebGL webcam mashup           | [i-will-never-let-you-go][iwnlyg] ([archive][iwnlyg-archive])        | N/A                                      |
+| ![!img-beginnings]  | **Beginnings & Endings**    | Musical pyramid scheme        | [beginnings-and-endings][beginnings] ([archive][beginnings-archive]) | N/A                                      |
 
 ---
 
