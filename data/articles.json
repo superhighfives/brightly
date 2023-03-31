@@ -1,5 +1,12 @@
 [
   {
+    "date": "2023-04-01T10:00:00+00:00",
+    "type": "Feature",
+    "publication": "Brightly",
+    "title": "Ten Years",
+    "href": "https://wearebrightly.com/ten-years"
+  },
+  {
     "date": "2016-06-22T10:08:58+00:00",
     "type": "Feature",
     "publication": "Zealous",
