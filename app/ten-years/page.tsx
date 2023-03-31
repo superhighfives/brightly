@@ -11,7 +11,7 @@ export default function TenYears() {
   return (
     <>
       <Visuals />
-      <Layout>
+      <Layout maxWidth="max-w-4xl">
         <Logo />
         <Content>
           <MDX />

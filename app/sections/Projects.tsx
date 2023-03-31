@@ -7,12 +7,16 @@ import Table, { Row } from '@/app/components/Table'
 import Grid from '@/app/components/Grid'
 import { SiGithub } from 'react-icons/si'
 
-export default function Projects() {
+export default function Projects({
+  variant = 'media',
+}: {
+  variant?: 'none' | 'media' | 'services'
+}) {
   return (
     <Section>
       <Group>
         <Heading>Projects</Heading>
-        <Grid cols="media">
+        <Grid cols={variant}>
           <Media
             id="project-iwnlyg"
             format="svg"

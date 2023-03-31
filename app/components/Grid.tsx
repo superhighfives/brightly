@@ -10,6 +10,7 @@ export default function Grid({
   const variantsColumns = {
     none: '',
     media: 'xs:grid-cols-2',
+    blog: 'sm:grid-cols-3',
     services: 'grid-cols-3 xs:grid-cols-4',
   }
   return (
