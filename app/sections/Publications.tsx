@@ -37,8 +37,9 @@ export default function Publications({ articles }: { articles: IArticle[] }) {
       <Group size="sm">
         <Heading size="sm">Publications and Coverage</Heading>
         <Table>
-          {articles.map((article) => (
+          {articles.map((article, i) => (
             <Article
+              highlight={i === 0}
               key={article.href}
               type={article.type}
               publication={article.publication}

@@ -6,6 +6,7 @@ export interface Article {
   title: string
   href: string
   preview: any
+  highlight: boolean
 }
 
 export default function Article({
@@ -14,13 +15,23 @@ export default function Article({
   title,
   href,
   preview,
+  highlight,
 }: Article) {
   return (
     <a
       key={href}
       href={href}
-      className="py-2 group flex items-center gap-3 outline-yellow-500"
+      className={`py-2 group flex items-center gap-3 relative outline-yellow-500 ${
+        highlight
+          ? 'border-t-2 pt-1 mt-1 border-slate-400/50 dark:border-yellow-400/50'
+          : ''
+      }`}
     >
+      {highlight ? (
+        <div className="absolute -top-2 left-0 -rotate-6 bg-slate-400 dark:bg-yellow-400 text-white dark:text-stone-950 rounded-full text-2xs font-bold uppercase tracking-wider px-2 py-0">
+          Latest
+        </div>
+      ) : null}
       <div className="w-4 h-4 flex-shrink-0 relative ml-2">
         <div className="inset-0 absolute bg-slate-200 dark:bg-yellow-400 z-10 overflow-hidden rounded-full"></div>
         {preview &&
