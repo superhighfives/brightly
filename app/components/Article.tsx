@@ -28,7 +28,7 @@ export default function Article({
       }`}
     >
       {highlight ? (
-        <div className="absolute -top-2 left-0 -rotate-6 bg-slate-400 dark:bg-yellow-4000 text-white dark:text-stone-950 rounded-full text-2xs font-bold uppercase tracking-wider px-2 py-0">
+        <div className="absolute -top-2 left-0 -rotate-6 bg-slate-400 dark:bg-yellow-400 text-white dark:text-stone-950 rounded-full text-2xs font-bold uppercase tracking-wider px-2 py-0">
           Latest
         </div>
       ) : null}
