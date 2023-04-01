@@ -13,7 +13,7 @@ export default function Content({ children }: { children: ReactNode }) {
       prose-blockquote:border-stone-800 dark:prose-blockquote:border-yellow-500 
       prose-blockquote:before:content-none prose-blockquote:after:content-none
       prose-strong:text-stone-800 dark:prose-strong:text-yellow-500
-      prose-em:font-medium dark:prose-em:text-white
+      prose-em:font-medium dark:prose-em:text-white prose-em:text-stone-950
       sm:prose-h1:font-light lg:prose-h1:font-extralight
       prose-h1:text-4xl sm:prose-h1:text-6xl lg:prose-h1:text-9xl
       prose-h2:uppercase prose-h2:tracking-wider prose-h2:font-semibold prose-h2:text-sm
