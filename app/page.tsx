@@ -6,6 +6,7 @@ import Intro from '@/app/sections/Intro'
 import Listen from '@/app/sections/Listen'
 import Projects from '@/app/sections/Projects'
 import Publications from '@/app/sections/Publications'
+import Announcement from './components/Announcement'
 import { fetchData } from '@/lib/api'
 
 import Visuals from './visuals/Visuals'
@@ -21,6 +22,7 @@ export default async function Home() {
       <Layout>
         <Logo />
         <Intro />
+        <Announcement />
         <Listen />
         <Discography />
         <Projects />
