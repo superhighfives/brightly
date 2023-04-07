@@ -10,7 +10,9 @@ export default function Announcement() {
       <FaRegClock size="16" className="flex-shrink-0 opacity-40 mt-0.5" />
       <span>
         Read about the ten year anniversary of{' '}
-        <strong className="font-bold">Beginnings & Endings</strong>
+        <strong className="font-bold">
+          Beginnings&nbsp;&amp;&nbsp;Endings
+        </strong>
       </span>
     </Link>
   )
