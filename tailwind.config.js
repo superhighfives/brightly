@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+import defaultTheme from 'tailwindcss/defaultTheme'
+
 module.exports = {
   content: [
     './app/**/*.{js,ts,jsx,tsx,mdx}',
@@ -10,6 +13,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        display: ['"Redaction 35"', ...defaultTheme.fontFamily.serif],
+      },
       fontSize: {
         '2xs': '.625rem',
       },

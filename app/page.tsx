@@ -6,7 +6,6 @@ import Intro from '@/app/sections/Intro'
 import Listen from '@/app/sections/Listen'
 import Projects from '@/app/sections/Projects'
 import Publications from '@/app/sections/Publications'
-import Latest from '@/app/sections/Latest'
 import Announcement from './components/Announcement'
 import { fetchData } from '@/lib/api'
 
@@ -21,7 +20,6 @@ export default async function Home() {
   return (
     <>
       <Visuals />
-      <Latest />
       <Layout>
         <Logo />
         <Intro />
