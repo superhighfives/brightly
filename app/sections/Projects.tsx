@@ -18,6 +18,14 @@ export default function Projects({
         <Heading>Projects</Heading>
         <Grid cols={variant}>
           <Media
+            id="project-lake"
+            format="svg"
+            title="Lysterfield Lake"
+            href="https://lysterfieldlake.com/"
+          >
+            <Description>AI-generated fever dreams</Description>
+          </Media>
+          <Media
             id="project-iwnlyg"
             format="svg"
             title="I Will Never Let You Go"
@@ -63,6 +71,14 @@ export default function Projects({
       <Group size="sm">
         <Heading size="sm">Source code / repos</Heading>
         <Table format="data">
+          <Row
+            id="repo-lake"
+            title="Lysterfield Lake"
+            data={['superhighfives/lysterfield-lake']}
+            href="https://github.com/superhighfives/lysterfield-lake"
+            Icon={SiGithub}
+            size="2xs"
+          />
           <Row
             id="repo-rugby"
             title="Rugby"

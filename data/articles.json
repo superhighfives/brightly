@@ -1,5 +1,12 @@
 [
   {
+    "date": "2023-12-01T10:00:00+00:00",
+    "type": "Blog",
+    "publication": "Brightly",
+    "title": "Machine learning, art, accelerometers, and the joy of slow progress and fast feedback loops (or, how I built Lysterfield Lake)",
+    "href": "https://wearebrightly.com/ten-years"
+  },
+  {
     "date": "2023-04-01T10:00:00+00:00",
     "type": "Blog",
     "publication": "Brightly",

@@ -67,6 +67,12 @@ export default function Discography() {
         <Heading size="sm">Singles and releases</Heading>
         <Table>
           <Row
+            id="lysterfield-lake"
+            title="Lysterfield Lake"
+            data={['2023', 'Lysterfield Lake']}
+            href="https://lysterfieldlake.com/"
+          />
+          <Row
             id="rugby"
             title="Rugby"
             data={['2016', 'One For Sorrow, Two For Joy']}
