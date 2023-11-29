@@ -29,6 +29,7 @@ export function Row({
   href,
   size = 'xs',
   Icon,
+  highlight,
 }: {
   id: string
   title: string
@@ -36,13 +37,19 @@ export function Row({
   href: string
   size?: '2xs' | 'xs' | 'sm' | 'md' | 'lg'
   Icon?: IconType
+  highlight?: boolean
 }) {
   return (
     <a
       key={id}
       href={href}
-      className="py-2 group grid items-center xs:grid-cols-2 gap-2 xs:gap-4 outline-yellow-500"
+      className="py-2 group grid items-center xs:grid-cols-2 gap-2 xs:gap-4 outline-yellow-500 relative"
     >
+      {highlight ? (
+        <div className="absolute -top-1 -left-1 -rotate-6 bg-slate-400 dark:bg-yellow-400 text-white dark:text-stone-950 rounded-full text-2xs font-bold uppercase tracking-wider px-2 py-0">
+          New
+        </div>
+      ) : null}
       <dt className="truncate font-bold text-xs justify-self-start max-w-full flex">
         <Title size={size}>{title}</Title>
       </dt>

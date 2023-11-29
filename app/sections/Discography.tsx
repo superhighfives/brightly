@@ -71,6 +71,7 @@ export default function Discography() {
             title="Lysterfield Lake"
             data={['2023', 'Lysterfield Lake']}
             href="https://lysterfieldlake.com/"
+            highlight={true}
           />
           <Row
             id="rugby"
