@@ -78,6 +78,7 @@ export default function Projects({
             href="https://github.com/superhighfives/lysterfield-lake"
             Icon={SiGithub}
             size="2xs"
+            highlight={true}
           />
           <Row
             id="repo-rugby"

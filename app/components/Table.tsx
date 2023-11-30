@@ -43,10 +43,14 @@ export function Row({
     <a
       key={id}
       href={href}
-      className="py-2 group grid items-center xs:grid-cols-2 gap-2 xs:gap-4 outline-yellow-500 relative"
+      className={`py-2 group grid items-center xs:grid-cols-2 gap-2 xs:gap-4 outline-yellow-500 relative ${
+        highlight
+          ? 'border-t-2 pt-1 mt-1 border-slate-400/50 dark:border-yellow-400/50'
+          : ''
+      }`}
     >
       {highlight ? (
-        <div className="absolute -top-1 -left-1 -rotate-6 bg-slate-400 dark:bg-yellow-400 text-white dark:text-stone-950 rounded-full text-2xs font-bold uppercase tracking-wider px-2 py-0">
+        <div className="absolute -top-[0.6125rem] left-0 -rotate-6 bg-slate-400 dark:bg-yellow-400 text-white dark:text-stone-950 rounded-full text-2xs font-bold uppercase tracking-wider px-2 py-0">
           New
         </div>
       ) : null}

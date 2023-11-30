@@ -9,7 +9,7 @@ export default function Group({
 }) {
   const variantsSizes = {
     md: 'gap-4',
-    sm: 'gap-2',
+    sm: 'gap-3',
   }
   return <div className={`grid ${variantsSizes[size]}`}>{children}</div>
 }

@@ -11,7 +11,7 @@ export default function Publications({ articles }: { articles: IArticle[] }) {
       <Group>
         <Heading>Reviews and Media</Heading>
 
-        <blockquote className="pl-2 grid gap-2">
+        <blockquote className="pl-2 grid gap-3">
           &quot;[...] Charlie Gleason writes such heartbreaking lyrics it's hard
           not to indulge yourself. With its mix of folk, pop and electronica,
           [...] ‘Oh, Infinity’ is a profound collection of tracks with a stellar
