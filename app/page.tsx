@@ -1,8 +1,7 @@
 import Layout from '@/app/components/Layout'
-import Logo from '@/app/components/Logo'
 import Social from '@/app/sections/Social'
 import Discography from '@/app/sections/Discography'
-import Intro from '@/app/sections/Intro'
+import Header from '@/app/sections/Header'
 import Listen from '@/app/sections/Listen'
 import Projects from '@/app/sections/Projects'
 import Publications from '@/app/sections/Publications'
@@ -21,8 +20,7 @@ export default async function Home() {
     <>
       <Visuals />
       <Layout>
-        <Logo />
-        <Intro />
+        <Header />
         <Announcement />
         <Listen />
         <Discography />

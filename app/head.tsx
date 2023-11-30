@@ -9,7 +9,7 @@ export default function Head() {
 
       <meta
         name="description"
-        content="Brightly is Charlie Gleason, a musician, programmer and computer science dropout. Along with Nic Lam and Joshua Barber, Brightly threads together folk, electronica, and surreptitious recordings of children screaming in airplanes."
+        content="Brightly is Charlie Gleason, a musician, programmer, and computer science dropout. He threads together folk, electronica, and surreptitious recordings of children screaming in airplanes with projects that explore the intersection of technology, music, and art."
       />
 
       <meta property="og:type" content="website" />
@@ -17,7 +17,7 @@ export default function Head() {
       <meta property="og:title" content="Brightly" />
       <meta
         property="og:description"
-        content="Brightly is Charlie Gleason, a musician, programmer and computer science dropout. Along with Nic Lam and Joshua Barber, Brightly threads together folk, electronica, and surreptitious recordings of children screaming in airplanes."
+        content="Brightly is Charlie Gleason, a musician, programmer, and computer science dropout. He threads together folk, electronica, and surreptitious recordings of children screaming in airplanes with projects that explore the intersection of technology, music, and art."
       />
       <meta
         property="og:image"
@@ -29,7 +29,7 @@ export default function Head() {
       <meta property="twitter:title" content="Brightly" />
       <meta
         property="twitter:description"
-        content="Brightly is Charlie Gleason, a musician, programmer and computer science dropout. Along with Nic Lam and Joshua Barber, Brightly threads together folk, electronica, and surreptitious recordings of children screaming in airplanes."
+        content="Brightly is Charlie Gleason, a musician, programmer, and computer science dropout. He threads together folk, electronica, and surreptitious recordings of children screaming in airplanes with projects that explore the intersection of technology, music, and art."
       />
       <meta
         property="twitter:image"
