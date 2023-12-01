@@ -36,7 +36,7 @@ export default function Listen() {
             title="YouTube"
           />
           <Service
-            href="https://music.wearebrightly.com/"
+            href="https://wearebrightly.bandcamp.com/"
             Icon={SiBandcamp}
             title="Bandcamp"
           />
