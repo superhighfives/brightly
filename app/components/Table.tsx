@@ -77,3 +77,30 @@ export function Row({
     </a>
   )
 }
+
+export function Store({
+  id,
+  title,
+  href,
+  Icon,
+}: {
+  id: string
+  title: string
+  href: string
+  Icon: IconType
+}) {
+  return (
+    <a
+      key={id}
+      href={href}
+      className={`py-2 group grid items-center gap-2 xs:gap-4 outline-yellow-500 relative`}
+    >
+      <dt className="truncate font-bold text-xs max-w-full flex gap-2">
+        <Icon size={28} className={`inline box-content p-1 flex-shrink-0`} />
+        <Title full={true} size="xl">
+          {title}
+        </Title>
+      </dt>
+    </a>
+  )
+}

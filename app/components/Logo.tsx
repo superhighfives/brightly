@@ -1,8 +1,9 @@
 import Link from 'next/link'
 
-export default function Logo() {
+export default function Logo({ simple = false }) {
   return (
     <div className="flex flex-col gap-4 items-center justify-start">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src="images/avatar.jpg"
         width="120"
@@ -15,7 +16,7 @@ export default function Logo() {
       >
         <h1>Brightly</h1>
       </Link>
-      <div>· · ·</div>
+      {!simple ? <div>· · ·</div> : null}
     </div>
   )
 }

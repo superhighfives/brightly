@@ -1,0 +1,84 @@
+import Table, { Store } from '@/app/components/Table'
+import Group from '@/app/components/Group'
+import Heading from '@/app/components/Heading'
+
+import {
+  SiSpotify,
+  SiApplemusic,
+  SiYoutube,
+  SiAmazon,
+  SiTidal,
+  SiSoundcloud,
+  SiYoutubemusic,
+  SiBandcamp,
+  SiDeezer,
+} from 'react-icons/si'
+
+import {
+  RiPolaroid2Fill
+} from 'react-icons/ri'
+
+# Lysterfield Lake
+
+<img
+  className="rounded-md shadow-xl -mt-1"
+  src="/images/record-lysterfield-lake.jpg"
+  alt="Cover art for Lysterfield Lake, with masked letters over illustrations of a lake and clouds"
+/>
+
+<div className="not-prose dark:text-yellow-400 space-y-16 mt-16">
+  <Group size="sm">
+    <Heading size="md">Stream Lysterfield Lake on</Heading>
+    <Table>
+      <Store id="spotify" title="Spotify" Icon={SiSpotify} href="https://open.spotify.com/track/605JJmeJA21B6GGL5BdbI2" />
+      <Store
+        id="apple-music"
+        title="Apple Music"
+        Icon={SiApplemusic}
+        href="https://music.apple.com/gb/album/lysterfield-lake/1717556136?i=1717556139&app=music"
+      />
+      <Store id="youtube" title="YouTube" Icon={SiYoutube} href="https://youtube.com/watch?v=a-9gGCQIPo8" />
+      <Store id="tidal" title="Tidal" Icon={SiTidal} href="https://listen.tidal.com/track/330183482" />
+      <Store
+        id="amazon-music"
+        title="Amazon Music"
+        Icon={SiAmazon}
+        href="https://music.amazon.co.uk/albums/B0CNRBVG7S?trackAsin=B0CNRCZV2T"
+      />
+      <Store
+        id="soundcloud"
+        title="SoundCloud"
+        Icon={SiSoundcloud}
+        href="https://soundcloud.com/wearebrightly/lysterfield-lake?id=1670351214"
+      />
+      <Store
+        id="youtube-music"
+        title="YouTube Music"
+        Icon={SiYoutubemusic}
+        href="https://music.youtube.com/watch?v=a-9gGCQIPo8"
+      />
+      <Store
+        id="deezer"
+        title="Deezer"
+        Icon={SiDeezer}
+        href="https://www.deezer.com/track/2551773132"
+      />
+    </Table>
+  </Group>
+  <Group size="sm">
+    <Heading size="md">Buy Lysterfield Lake on</Heading>
+    <Table>
+      <Store id="bandcamp" title="Bandcamp" Icon={SiBandcamp} href="https://wearebrightly.bandcamp.com/track/lysterfield-lake" />
+      <Store id="itunes" title="iTunes" Icon={SiApplemusic} href="https://music.apple.com/gb/album/lysterfield-lake/1717556136?i=1717556139&app=itunes" />
+      <Store id="amazon" title="Amazon" Icon={SiAmazon} href="https://amazon.co.uk/dp/B0CNRCZV2T?tag=songwhip05-21" />
+    </Table>
+  </Group>
+  <Group size="sm">
+    <Heading size="md">Visit the project</Heading>
+    <Table>
+      <Store id="lysterfield-lake" title="Lysterfield Lake" Icon={RiPolaroid2Fill} href="https://lysterfieldlake.com" />
+    </Table>
+  </Group>
+
+  <div>· · ·</div>
+</div>

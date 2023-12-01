@@ -10,21 +10,18 @@ import { PiArrowArcLeft } from 'react-icons/pi'
 
 import MDX from './content.mdx'
 
-export default function TenYears() {
+export default function LysterfieldLake() {
   return (
     <>
       <Visuals />
-      <Layout maxWidth="max-w-4xl">
-        <Logo />
+
+      <Layout size="tight" maxWidth="max-w-md">
+        <Logo simple={true} />
         <Content>
           <MDX />
-          <hr />
-          <div className="not-prose dark:text-yellow-400">
-            <Button href="/" Icon={PiArrowArcLeft} title="Back to home" />
-          </div>
-          <hr />
         </Content>
-        <Social />
+
+        <Social simple={true} />
       </Layout>
     </>
   )
