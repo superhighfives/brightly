@@ -1,8 +1,8 @@
 'use client'
 
-import { useAspect } from '@react-three/drei'
+import { useAspect, PerformanceMonitor } from '@react-three/drei'
 import { Canvas, useFrame } from '@react-three/fiber'
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import { FlowMaterial } from './materials/FlowMaterial'
 
 function ShaderPlane() {
@@ -29,9 +29,14 @@ function ShaderPlane() {
 }
 
 export default function Visuals() {
+  const [dpr, setDpr] = useState(1.5)
   return (
     <div className="fixed top-0 left-0 h-screen w-screen -z-10">
-      <Canvas orthographic={true}>
+      <Canvas dpr={dpr} orthographic={true}>
+        <PerformanceMonitor
+          onDecline={() => setDpr(1)}
+          onIncline={() => setDpr(2)}
+        />
         <ShaderPlane />
       </Canvas>
     </div>
