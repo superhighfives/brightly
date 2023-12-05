@@ -26,6 +26,7 @@ export default function Media({
       href={href}
       className="flex self-start items-start gap-2 p-2 group outline-yellow-500"
     >
+      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         alt=""
         className={`w-12 h-12 block border-b-2 border-transparent transition-all ${
