@@ -2,7 +2,6 @@
 
 import Layout from '@/app/components/Layout'
 import Logo from '@/app/components/Logo'
-import Social from '@/app/sections/Social'
 import Content from '@/app/components/Content'
 import Visuals from '@/app/visuals/Visuals'
 import Button from '@/app/components/Button'
@@ -24,7 +23,6 @@ export default function TenYears() {
           </div>
           <hr />
         </Content>
-        <Social />
       </Layout>
     </>
   )
