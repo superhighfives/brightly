@@ -10,7 +10,7 @@ export default function Head() {
       />
 
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://wearebrightly.com/ten-years" />
+      <meta property="og:url" content="https://wewerebrightly.com/ten-years" />
       <meta property="og:title" content="Lysterfield Lake • Brightly" />
       <meta
         property="og:description"
@@ -18,13 +18,13 @@ export default function Head() {
       />
       <meta
         property="og:image"
-        content="https://wearebrightly.com/images/record-lysterfield-lake.jpg"
+        content="https://wewerebrightly.com/images/record-lysterfield-lake.jpg"
       />
 
       <meta property="twitter:card" content="summary_large_image" />
       <meta
         property="twitter:url"
-        content="https://wearebrightly.com/ten-years"
+        content="https://wewerebrightly.com/ten-years"
       />
       <meta property="twitter:title" content="Lysterfield Lake • Brightly" />
       <meta
@@ -33,7 +33,7 @@ export default function Head() {
       />
       <meta
         property="twitter:image"
-        content="https://wearebrightly.com/images/record-lysterfield-lake.jpg"
+        content="https://wewerebrightly.com/images/record-lysterfield-lake.jpg"
       />
     </>
   )

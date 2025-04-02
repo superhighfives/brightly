@@ -29,7 +29,7 @@ export default function Projects({
             id="project-iwnlyg"
             format="svg"
             title="I Will Never Let You Go"
-            href="https://iwillneverletyougo.wearebrightly.com/"
+            href="https://iwillneverletyougo.wewerebrightly.com/"
           >
             <Description>WebGL webcam mashup</Description>
           </Media>
@@ -37,7 +37,7 @@ export default function Projects({
             id="project-rugby"
             format="svg"
             title="Rugby"
-            href="https://rugby.wearebrightly.com/"
+            href="https://rugby.wewerebrightly.com/"
           >
             <Description>Love letter to the humble GIF</Description>
           </Media>
@@ -45,7 +45,7 @@ export default function Projects({
             id="project-true"
             format="svg"
             title="True"
-            href="https://true.wearebrightly.com/"
+            href="https://true.wewerebrightly.com/"
           >
             <Description>Immersive lyric video</Description>
           </Media>
@@ -53,7 +53,7 @@ export default function Projects({
             id="project-tweetflight"
             format="svg"
             title="Tweetflight"
-            href="https://tweetflight.wearebrightly.com/"
+            href="https://tweetflight.wewerebrightly.com/"
           >
             <Description>Twitter karaoke</Description>
           </Media>
@@ -61,7 +61,7 @@ export default function Projects({
             id="project-beginnings"
             format="svg"
             title="Beginnings & Endings"
-            href="https://beginnings.wearebrightly.com/"
+            href="https://beginnings.wewerebrightly.com/"
           >
             <Description>Musical pyramid scheme</Description>
           </Media>

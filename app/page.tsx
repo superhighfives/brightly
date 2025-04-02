@@ -1,5 +1,4 @@
 import Layout from '@/app/components/Layout'
-import Social from '@/app/sections/Social'
 import Discography from '@/app/sections/Discography'
 import Header from '@/app/sections/Header'
 import Listen from '@/app/sections/Listen'
@@ -26,7 +25,6 @@ export default async function Home() {
         <Discography />
         <Projects />
         <Publications articles={articles} />
-        <Social />
       </Layout>
     </>
   )

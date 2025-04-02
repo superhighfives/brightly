@@ -77,7 +77,7 @@ export default function Discography() {
             id="rugby"
             title="Rugby"
             data={['2016', 'One For Sorrow, Two For Joy']}
-            href="https://rugby.wearebrightly.com/"
+            href="https://rugby.wewerebrightly.com/"
           />
           <Row
             id="iwnlyg"
