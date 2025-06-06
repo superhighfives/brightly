@@ -68,7 +68,7 @@ export function Row({
             className={`${i === data.length - 1 ? 'truncate max-w-full' : ''}`}
           >
             {i === 0 && Icon ? (
-              <Icon className={`inline box-content p-1 flex-shrink-0`} />
+              <Icon className={`inline box-content p-1 shrink-0`} />
             ) : null}
             {item}
           </span>
@@ -96,7 +96,7 @@ export function Store({
       className={`py-2 group grid items-center gap-2 xs:gap-4 outline-yellow-500 relative`}
     >
       <dt className="truncate font-bold text-xs max-w-full flex gap-2">
-        <Icon size={28} className={`inline box-content p-1 flex-shrink-0`} />
+        <Icon size={28} className={`inline box-content p-1 shrink-0`} />
         <Title full={true} size="xl">
           {title}
         </Title>
