@@ -7,8 +7,6 @@ import Publications from '@/app/sections/Publications'
 import Announcement from './components/Announcement'
 import { fetchData } from '@/lib/api'
 
-import Visuals from './visuals/Visuals'
-
 import data from '@/data/articles.json'
 
 export default async function Home() {
@@ -16,8 +14,6 @@ export default async function Home() {
     process.env.NODE_ENV !== 'development' ? await fetchData(data) : []
 
   return (
-    <>
-      <Visuals />
       <Layout>
         <Header />
         <Announcement />
@@ -26,6 +22,5 @@ export default async function Home() {
         <Projects />
         <Publications articles={articles} />
       </Layout>
-    </>
   )
 }

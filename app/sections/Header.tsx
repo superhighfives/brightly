@@ -8,12 +8,12 @@ export default function Header() {
         <div className="text-slate-600 dark:text-yellow-400 space-y-8">
           <p className="text-xl sm:text-2xl">
             <span className="border-b border-slate-400/50 dark:border-yellow-700/50">
-              Brightly is Charlie Gleason, a musician, programmer and computer
+              Brightly was Charlie Gleason, a musician, programmer and computer
               science dropout.
             </span>
           </p>
           <p>
-            He threads together folk, electronica, and surreptitious recordings
+            He threaded together folk, electronica, and surreptitious recordings
             of children screaming in airplanes with projects that explore the
             intersection of technology, music, and art.
           </p>
