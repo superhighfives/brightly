@@ -2,6 +2,7 @@
   "name": "brightly-next",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
@@ -9,10 +10,13 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/mdx": "15.3.3",
+    "@mdx-js/loader": "^3.1.0",
+    "@mdx-js/react": "^3.1.0",
+    "@next/mdx": "^15.3.3",
     "@paper-design/shaders": "^0.0.35",
     "@paper-design/shaders-react": "^0.0.39",
     "@tailwindcss/postcss": "^4.1.8",
+    "@types/mdx": "^2.0.13",
     "link-preview-js": "^3.1.0",
     "next": "15.3.3",
     "react": "19.1.0",
