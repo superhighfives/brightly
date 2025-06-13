@@ -1,5 +1,4 @@
 import Layout from '@/app/components/Layout'
-import Social from '@/app/sections/Social'
 import Discography from '@/app/sections/Discography'
 import Header from '@/app/sections/Header'
 import Listen from '@/app/sections/Listen'
@@ -8,8 +7,6 @@ import Publications from '@/app/sections/Publications'
 import Announcement from './components/Announcement'
 import { fetchData } from '@/lib/api'
 
-import Visuals from './visuals/Visuals'
-
 import data from '@/data/articles.json'
 
 export default async function Home() {
@@ -17,8 +14,6 @@ export default async function Home() {
     process.env.NODE_ENV !== 'development' ? await fetchData(data) : []
 
   return (
-    <>
-      <Visuals />
       <Layout>
         <Header />
         <Announcement />
@@ -26,8 +21,6 @@ export default async function Home() {
         <Discography />
         <Projects />
         <Publications articles={articles} />
-        <Social />
       </Layout>
-    </>
   )
 }
