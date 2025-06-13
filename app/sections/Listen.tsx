@@ -31,12 +31,12 @@ export default function Listen() {
             title="Spotify"
           />
           <Service
-            href="https://youtube.com/wearebrightly"
+            href="https://youtube.com/wewerebrightly"
             Icon={SiYoutube}
             title="YouTube"
           />
           <Service
-            href="https://wearebrightly.bandcamp.com/"
+            href="https://wewerebrightly.bandcamp.com/"
             Icon={SiBandcamp}
             title="Bandcamp"
           />
@@ -46,7 +46,7 @@ export default function Listen() {
             title="Amazon Music"
           />
           <Service
-            href="https://soundcloud.com/wearebrightly"
+            href="https://soundcloud.com/wewerebrightly"
             Icon={SiSoundcloud}
             title="Soundcloud"
           />

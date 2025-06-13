@@ -16,7 +16,7 @@ export default function Discography() {
             id="record-beginnings-and-endings"
             format="jpg"
             title="Beginnings & Endings"
-            href="https://wearebrightly.bandcamp.com/album/beginnings-endings"
+            href="https://wewerebrightly.bandcamp.com/album/beginnings-endings"
             type="record"
           >
             <Tags>
@@ -28,7 +28,7 @@ export default function Discography() {
             id="record-the-greylings"
             format="jpg"
             title="The Greylings"
-            href="https://wearebrightly.bandcamp.com/album/the-greylings"
+            href="https://wewerebrightly.bandcamp.com/album/the-greylings"
             type="record"
           >
             <Tags>
@@ -40,7 +40,7 @@ export default function Discography() {
             id="record-oh-infinity"
             format="jpg"
             title="Oh, Infinity"
-            href="https://wearebrightly.bandcamp.com/album/oh-infinity"
+            href="https://wewerebrightly.bandcamp.com/album/oh-infinity"
             type="record"
           >
             <Tags>
@@ -52,7 +52,7 @@ export default function Discography() {
             id="record-sorrow-and-joy"
             format="jpg"
             title="One For Sorrow, Two For&nbsp;Joy"
-            href="https://wearebrightly.bandcamp.com/album/one-for-sorrow-two-for-joy"
+            href="https://wewerebrightly.bandcamp.com/album/one-for-sorrow-two-for-joy"
             type="record"
           >
             <Tags>
