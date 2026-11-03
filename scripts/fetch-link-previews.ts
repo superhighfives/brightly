@@ -39,6 +39,12 @@ function clean(value: string | undefined) {
   return trimmed || undefined
 }
 
+// Tumblr starts post descriptions with reaction counts, like
+// "💬 0 🔁 0 ❤️ 0 · Rate, review and download True".
+function cleanDescription(value: string | undefined) {
+  return clean(value?.replace(/^\s*💬\s*\d+\s*🔁\s*\d+\s*❤️?\s*\d+\s*·\s*/, ''))
+}
+
 function httpsOnly(urls: string[] | undefined) {
   return urls?.find((url) => url.startsWith('https://'))
 }
@@ -60,7 +66,9 @@ async function fetchPreview(href: string): Promise<LinkPreview> {
   return {
     title: 'title' in preview ? clean(preview.title) : undefined,
     description:
-      'description' in preview ? clean(preview.description) : undefined,
+      'description' in preview
+        ? cleanDescription(preview.description)
+        : undefined,
     favicon: httpsOnly(preview.favicons),
     image: 'images' in preview ? httpsOnly(preview.images) : undefined,
     fetchedAt: new Date().toISOString(),
