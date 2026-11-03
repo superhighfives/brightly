@@ -7,7 +7,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint .",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
@@ -16,14 +16,14 @@
   "dependencies": {
     "@mdx-js/loader": "^3.1.0",
     "@mdx-js/react": "^3.1.0",
-    "@next/mdx": "^15.3.3",
-    "@opennextjs/cloudflare": "^1.16.3",
+    "@next/mdx": "^16.4.3",
+    "@opennextjs/cloudflare": "^1.20.15",
     "@paper-design/shaders": "^0.0.35",
     "@paper-design/shaders-react": "^0.0.39",
     "@tailwindcss/postcss": "^4.1.8",
     "@types/mdx": "^2.0.13",
-    "link-preview-js": "^3.1.0",
-    "next": "15.3.9",
+    "link-preview-js": "^4.0.4",
+    "next": "16.4.3",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-icons": "^5.5.0",
@@ -37,12 +37,12 @@
     "autoprefixer": "^10.4.21",
     "encoding": "^0.1.13",
     "eslint": "9.28.0",
-    "eslint-config-next": "15.3.3",
+    "eslint-config-next": "16.4.3",
     "eslint-config-prettier": "^10.1.5",
     "postcss": "^8.5.4",
     "prettier": "^3.5.3",
     "tailwindcss": "^4.1.8",
-    "wrangler": "^4.63.0"
+    "wrangler": "^4.156.1"
   },
   "prettier": {
     "trailingComma": "es5",
@@ -52,6 +52,8 @@
   },
   "overrides": {
     "@types/react": "19.1.6",
-    "@types/react-dom": "19.1.6"
+    "@types/react-dom": "19.1.6",
+    "glob": "^14.0.3",
+    "postcss-selector-parser": "^6.1.5"
   }
 }
