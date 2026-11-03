@@ -34,5 +34,5 @@
     // see https://opennext.js.org/cloudflare/howtos/image
     "binding": "IMAGES",
   },
-  "custom_domains": ["wewerebrightly.com"],
+  "routes": [{ "pattern": "wewerebrightly.com", "custom_domain": true }],
 }
