@@ -1,11 +1,12 @@
 import Title from '@/app/components/Title'
+import type { LinkPreview } from '@/lib/articles'
 
 export interface Article {
   type: string
   publication: string
   title: string
   href: string
-  preview: any
+  preview?: LinkPreview
   highlight: boolean
 }
 
@@ -34,14 +35,12 @@ export default function Article({
       ) : null}
       <div className="w-4 h-4 shrink-0 relative ml-2">
         <div className="inset-0 absolute bg-slate-200 dark:bg-yellow-400 z-10 overflow-hidden rounded-full"></div>
-        {preview &&
-        preview.favicons[0] &&
-        preview?.favicons[0].startsWith('https://') ? (
+        {preview?.favicon ? (
           <img
             width="16"
             height="16"
             className="absolute inset-0 grayscale dark:sepia overflow-hidden rounded-full z-20 mix-blend-multiply contrast-200"
-            src={preview?.favicons[0]}
+            src={preview.favicon}
             alt=""
           />
         ) : null}

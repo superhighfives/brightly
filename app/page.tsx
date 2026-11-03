@@ -5,22 +5,19 @@ import Listen from '@/app/sections/Listen'
 import Projects from '@/app/sections/Projects'
 import Publications from '@/app/sections/Publications'
 import Announcement from './components/Announcement'
-import { fetchData } from '@/lib/api'
+import { getArticles } from '@/lib/articles'
 
-import data from '@/data/articles.json'
+export const dynamic = 'force-static'
 
-export default async function Home() {
-  const articles =
-    process.env.NODE_ENV !== 'development' ? await fetchData(data) : []
-
+export default function Home() {
   return (
-      <Layout>
-        <Header />
-        <Announcement />
-        <Listen />
-        <Discography />
-        <Projects />
-        <Publications articles={articles} />
-      </Layout>
+    <Layout>
+      <Header />
+      <Announcement />
+      <Listen />
+      <Discography />
+      <Projects />
+      <Publications articles={getArticles()} />
+    </Layout>
   )
 }

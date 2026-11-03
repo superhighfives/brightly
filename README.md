@@ -22,13 +22,14 @@ npm install
 npm run dev       # local dev server
 npm run preview   # build for Cloudflare and preview locally
 npm run deploy    # build and deploy to Cloudflare Workers
+npm run previews  # refresh link previews in data/link-previews.json
 ```
 
 Local config lives in `.dev.vars`, which sets `NEXTJS_ENV`.
 
 ## How it works
 
-It's a Next.js app deployed to Cloudflare Workers with OpenNext. The home page is assembled from sections in `app/sections/`, and longer write-ups (`/ten-years` and `/lysterfield-lake`) are MDX pages. The press and blog links in `data/articles.json` get link previews fetched at render time. That step is skipped in development.
+It's a Next.js app deployed to Cloudflare Workers with OpenNext. The home page is assembled from sections in `app/sections/`, and longer write-ups (`/ten-years` and `/lysterfield-lake`) are MDX pages. The press and blog links in `data/articles.json` get link previews from `data/link-previews.json`, so the home page renders without any network calls. To refresh them, run `npm run previews` and commit the updated file. If a link fails, the script keeps its last good preview and records the error under `failures`. An article with no preview still shows its title and publication.
 
 [rugby]: https://github.com/superhighfives/rugby
 [rugby-server]: https://github.com/superhighfives/rugby-server
