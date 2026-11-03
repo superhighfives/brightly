@@ -5,16 +5,21 @@ import Table from '@/app/components/Table'
 import Article from '@/app/components/Article'
 import type { Article as IArticle } from '@/app/components/Article'
 
-export default function Publications({ articles }: { articles: IArticle[] }) {
+export default function Publications({
+  articles,
+}: {
+  articles: Omit<IArticle, 'highlight'>[]
+}) {
   return (
     <Section>
       <Group>
         <Heading>Reviews and Media</Heading>
         <blockquote className="pl-2 grid gap-3">
-          &lsquo;[...] Charlie Gleason writes such heartbreaking lyrics it&apos;s hard
-          not to indulge yourself. With its mix of folk, pop and electronica,
-          [...] &apos;Oh, Infinity&apos; is a profound collection of tracks with a stellar
-          lineup of Melbourne musicians behind it.&rdquo;
+          &lsquo;[...] Charlie Gleason writes such heartbreaking lyrics
+          it&apos;s hard not to indulge yourself. With its mix of folk, pop and
+          electronica, [...] &apos;Oh, Infinity&apos; is a profound collection
+          of tracks with a stellar lineup of Melbourne musicians behind
+          it.&rdquo;
           <div className="flex gap-6 items-center">
             <svg
               width="48"
